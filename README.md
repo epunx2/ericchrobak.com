@@ -8,7 +8,7 @@ After putting together some work for some online classes I decided it would be g
 [js-standard-style](https://github.com/feross/standard)
 
 ## Screenshots
-![Site Screen Shot](/jpg/screenshot.png)
+![Site Screen Shot](/jpg/best_shot.png)
 
 ## Tech/framework used
 
