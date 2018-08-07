@@ -32,10 +32,10 @@ This repo is for reference to see the code the site was built on. -->
 ## Contribute
 Bug reports and pull requests are welcome on GitHub at https://github.com/epunx2/coffee-cli-app. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant [code of conduct](https://github.com/epunx2/coffee-cli-app/coffee-cli-app/CODE_OF_CONDUCT.md).
 
-## Credits
+<!-- ## Credits
 Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project.
 
-Anything else that seems useful
+Anything else that seems useful -->
 
 ## License
 This is licensed under the [MIT License](https://opensource.org/licenses/MIT).
