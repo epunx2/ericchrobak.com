@@ -183,3 +183,7 @@ nav #name {
 	text-align: center;
 	color: rgb(211,223,236);
 }
+
+.one a {
+	color: rgb(255, 48, 140);
+}
