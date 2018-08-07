@@ -20,14 +20,14 @@ After putting together some work for some online classes I decided it would be g
   - JQuery
   - Bootstrap
 
-## Features
+<!-- ## Features
 What makes your project stand out?
 
 ## Code Example
 Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
 ## How to use?
-This repo is for reference to see the code the site was built on.
+This repo is for reference to see the code the site was built on. -->
 
 ## Contribute
 Bug reports and pull requests are welcome on GitHub at https://github.com/epunx2/coffee-cli-app. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant [code of conduct](https://github.com/epunx2/coffee-cli-app/coffee-cli-app/CODE_OF_CONDUCT.md).
