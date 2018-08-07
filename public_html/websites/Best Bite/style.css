@@ -1,0 +1,165 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arvo', serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  height: 124px;
+}
+
+
+/* Header */
+.header .row h1 {
+  padding-top: 20px; 
+	text-align: left;
+}
+
+.nav {
+	float: right;
+	width: 340px;
+	margin-right: 5px;
+}
+
+.nav-pills {
+	padding-top: 40px;
+	padding-left: 5px;
+}
+
+.nav-pills li a {
+  color: #d8192f;
+  border: #d8192f solid 1px;
+  margin-left: 10px;
+  text-align: center;
+  width: 100px;
+}
+
+.nav-pills li.active a,
+.nav-pills li a:hover,
+.section .btn:hover {
+  background-color:rgba(216,25,47,1);
+  box-shadow:0 2px 4px rgba(0,0,0,.5); 
+  color:#fff;
+}
+
+
+/* Jumbotron */
+.jumbotron {
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/bestbite/bg.jpg)no-repeat center center;
+	background-size: cover;
+  height: 500px;
+}
+
+.jumbotron .container .row {
+	padding-top: 97px;
+}
+
+.jumbotron .container .row h1 {
+	text-align: right;
+	color: #fff;
+	padding: 0;
+	font-size: 60px;
+    text-decoration:none;
+}
+
+
+/* Banner */
+.banner, .supporting {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.banner {
+  background-color:#36343f;
+  height:180px; 
+  color: #fff;
+}
+
+.banner btn {
+  text-decoration: none;
+ }
+ 
+.banner a {
+  background-color: rgba(216,25,47,.5);
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 15px 8px 15px;
+ }
+.banner #one { 
+	font-size: 30px;
+	text-align: center;
+    padding-bottom: 14px;
+}
+
+/*supporting*/
+.supporting {
+         height: 320px;
+ }
+
+.supporting h2 {
+  float: center;
+  text-align: center;
+ }
+.supporting .col-md-4 {
+  text-align: center;
+ }
+.supporting .col-md-4 h4 {
+  color: red;
+  font-size: 20px;
+ }
+ 
+.supporting .col-md-4 p {
+  padding-bottom: 0px;
+ }
+  
+.footer {
+        height: 140px;
+        background: #eeeeee;
+ }
+ 
+.footer .col-md-4 {
+ padding-top: 30px;
+ }
+ 
+.footer .col-md-4 p {
+  font-size: 13px;
+ }
+ 
+.footer .col-md-4 .one{
+ text-align:left;
+ }
+
+.footer .col-md-4 a{
+ text-align: center;
+ } 
+.footer .col-md-4 .two{
+ color: red;
+ font-size: 13px;
+ padding: 8px 15px 8px 15px;
+ }
+ 
+.footer .col-md-4 .three{
+ text-align:right;
+ }
+
+/* Media Queries */
+@media (max-width: 680px) {
+  .header h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .nav {
+    float: none;
+    margin: 0 auto;
+  }
+  .banner {
+    height: 220px;
+  }
+
+  .nav-pills li:first-child a  {
+    margin-left: 0;
+  }
+}
