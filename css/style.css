@@ -110,9 +110,18 @@ nav #name {
 /*Supporting*/
 .supporting {
 	padding-top: 5%;
-	margin: 0;
+	margin: 0 auto;
 	height: 80%;
 	margin-bottom: 7.5%;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
 }
 
 .supporting .thumbnail {
