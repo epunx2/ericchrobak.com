@@ -4,7 +4,7 @@
 		<title>Eric Chrobak | Home</title>
 		<meta charset="utf-8">
 		<meta name="author" content="Eric Chrobak">
-		<meta name="description" content="Eric Chrobak's portfolio showcases work that he has done as a developer. Eric is trained in HTML, CSS, JavaScript, jQuery, and React.">
+		<meta name="description" content="Eric Chrobak's portfolio showcases work that he has done as a developer. Eric is trained in HTML, CSS, JavaScript, jQuery, Ruby, and SQLite.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--Fonts-->
 		<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
@@ -14,21 +14,11 @@
         <link rel="icon" type="image/icon" href="jpg/webfavicon.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href='css/scrolling-nav.css'>
+		<!-- custom style -->
 		<link rel="stylesheet" href='css/style.css'>
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
 		<style type="text/css">
-			@media only screen and (max-width: 767px){
-				.supporting {
-					height: auto;
-				}
 
-				.jumbotron, .main {
-					height: auto;
-				}
-				.footer .col-md-6 {
-					height: 4em;
-					display: relative;
-				}
-			}
 		</style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -39,7 +29,7 @@
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		<!--Navigation-->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container-fluid">
+			<div class="container">
 
 				<div class="navbar-header">
       				<button type="button" class="navbar-toggle  dropdown-toggle" data-toggle="dropdown" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -66,7 +56,7 @@
 			</div>
 		</nav>
 
-
+		<!-- Project Showcase -->
 		<div class="jumbotron" id="home">
 			<div class="container">
 				<h1 class="intro">Dream. Design. Develop.</h1>
@@ -103,7 +93,7 @@
 				    </a>
 				</div>
 			</div>
-		</div>
+		</div><!-- End Project Showcase -->
 
 
 		<!--This Section has work that I've done-->
@@ -297,53 +287,67 @@
 					    </div>
 					</div>
 
-					<div class="col-sm-4">
+					<div class="col-md-4">
 						<a href="#work" data-toggle="modal" data-target="#myModal1" class="javascript thumbnail"><img src="jpg/websites/litebrite.png"></a>
 						<a href="#work" data-toggle="modal" data-target="#myModal2" class="javascript thumbnail"><img src="jpg/websites/threadly.png"></a>
 						<a href="#work" data-toggle="modal" data-target="#myModal3" class="html thumbnail"><img src="jpg/websites/innovationcloud.png"></a>
 					</div>
 
-					<div class="col-sm-4">
+					<div class="col-md-4">
 						<a href="#work" data-toggle="modal" data-target="#myModal4" class="html thumbnail"><img src="jpg/websites/adoptly.png"></a>
 						<a href="#work" data-toggle="modal" data-target="#myModal5" class="html thumbnail"><img src="jpg/websites/redeyephotography.png"></a>
 						<a href="#work" data-toggle="modal" data-target="#myModal6" class="javascript thumbnail"><img src="jpg/websites/movegear.png"></a>
 					</div>
 
-					<div class="col-sm-4">
+					<div class="col-md-4">
 						<a href="#work" data-toggle="modal" data-target="#myModal7" class="javascript thumbnail"><img src="jpg/websites/armandoperez.png"></a>
 						<a href="#work" data-toggle="modal" data-target="#myModal8" class="html thumbnail"><img src="jpg/websites/bestbite.png"></a>
 						<a href="#work" data-toggle="modal" data-target="#myModal9" class="html thumbnail"><img src="jpg/websites/bolt.png"></a>
 					</div>
 
-				</div><!--End Nav-->
+				</div>
 
 			</div>
 		</div><!--End Supporting-->
 
-
+		<!-- About -->
 		<div class="main" id="about">
 			<div class="container">
 				<div class="row">
-					<p id="eric">I am a Chicago based web developer. I work with Ruby, JavaScript, HTML, CSS, SQLite, jQuery, Zoho Deluge, and Zoho CRM.</p>
-	        <p class="one"><span></span><a href="mailto:eric@ericchrobak.com">Email</a>  |  <a href="tel:312-513-8086">Phone</a>  |  <a href="https://ggithub.com/epunx2">Github</a>  |  <a href="https://epunx2.github.io/">Blog</a></p>
-      	</div>
+					<p id="eric">Eric is a Chicago based web developer specializing in:</p>
+					<div class="col-md-6">
+						<ul>
+							<li><p>Ruby</p></li>
+							<li><p>JavaScript</p></li>
+							<li><p>HTML</p></li>
+							<li><p>Rack</p></li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul>
+							<li><p>SQLite</p></li>
+							<li><p>jQuery</p></li>
+							<li><p>CSS</p></li>
+							<li><p>Sinatra</p></li>
+						</ul>
+					</div>
+      			</div>
 			</div>
-		</div>
+		</div><!-- End About -->
 
 
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<a href="https://www.linkedin.com/in/echrobak" target="blank"><img src="jpg/Linkedin.png"></a>
+						<p>Designed and developed by: Eric Chrobak</p>
 					</div>
 					<div class="col-md-6">
-						<p>Designed and developed by: Eric Chrobak</p>
+						<p class="one"><span></span><a href="mailto:eric@ericchrobak.com">Email</a>  |  <a href="tel:312-513-8086">Phone</a>  |  <a href="https://ggithub.com/epunx2">Github</a>  |  <a href="https://epunx2.github.io/">Blog</a>  |  <a href="https://www.linkedin.com/in/echrobak">LinkedIn</a></p>
 					</div>
 				</div>
 			</div>
 		</footer>
-		<!-- Scripts -->
 
 
 	</body>

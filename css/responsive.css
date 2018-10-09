@@ -1,0 +1,13 @@
+@media only screen and (max-width: 767px){
+    .supporting {
+        height: auto;
+    }
+
+    .jumbotron, .main {
+        height: auto;
+    }
+    .footer .col-md-6 {
+        height: 4em;
+        display: relative;
+    }
+}
