@@ -126,6 +126,10 @@ nav #name {
 	line-height: 0;
 }
 
+#supporting-nav {
+	margin-left: 3%;
+}
+
 .supporting .thumbnail {
 	border: 0;
 	margin-left: auto;
