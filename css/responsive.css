@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) and (min-width: 459px) {
     .supporting {
         height: auto;
     }
@@ -9,5 +9,79 @@
     .footer .col-md-6 {
         height: 4em;
         display: relative;
+    }
+}
+
+@media only screen and (max-width: 458px) {
+    nav .container-fluid, .navbar-header, .navbar-collapse {
+        margin: 0 15px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar-nav {
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .navbar-nav li a{
+        padding-right: 20px;
+        padding-left: 40px;
+    }
+
+    .jumbotron {
+        padding: 35% 0;
+    }
+
+    .jumbotron h1 {
+        padding: 20% 0;
+        font-size: 4em;
+    }
+
+    #carousel-example-generic {
+        width: 85%
+    }
+
+    .supporting {
+        padding-top: 25%;
+        height: auto;
+    }
+
+    .supporting .thumbnail {
+        width: 90%;
+        margin: 10% 10%;
+    }
+
+    .main {
+        height: auto;
+        padding-bottom: 5%;
+    }
+
+    .main #eric {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 20%;
+        margin-right: 15%;
+    }
+
+    .main .col-md-6 {
+        margin-right: 5%;
+    }
+
+    .footer .col-md-6:first-of-type {
+        height: 4em;
+        margin-left: 20%;
+        margin-right: 15%;
+        padding: 0;
+    }
+
+    .footer .col-md-6:nth-of-type(2) {
+        height: 4em;
+        margin-right: 15%
+    }
+
+    .footer .col-md-6:nth-of-type(2) p {
+        font-size: 1.75em;
     }
 }

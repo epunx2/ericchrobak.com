@@ -1,10 +1,11 @@
 
 html, body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	font-weight: 300;
 	font-family: 'Inconsolata', serif;
 	font-size: calc(1vw + 1vh);
+	width: 100%;
 	}
 
 body {
@@ -14,18 +15,13 @@ body {
 	background-size: cover;
 	color: rgb(211,223,236);
 	min-height: 100%;
-	margin: 0 auto;
 }
 
 div {
 	max-width: 100%;
 }
 
-.container {
-	width: 100%;
-}
-
-.row {
+.container, .container-fluid, .row {
 	width: 100%;
 }
 
@@ -41,7 +37,13 @@ nav #name {
 	color: rgb(48, 140, 255);
 }
 
-.btn {
+/*.navbar,  .container-fluid, .navbar-header, .container-fluid .navbar-collapse {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}*/
+
+/*.btn {
 	margin-top: 8px;
 	margin-right: 75px;
 	background-color: rgb(211,223,236);
@@ -72,11 +74,16 @@ nav #name {
   color:rgb(211,223,236);
   padding: 5px 0;
   text-align: center;
+  display: block;
 }
 
 .dropdown-menu li a:hover {
 	color: #000;
-}
+}*/
+
+/*.navbar-nav .page-scroll {
+	background-color: rgb(211,223,236);
+}*/
 
 /*Jumbotron*/
 .jumbotron {
