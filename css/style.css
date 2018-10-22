@@ -83,7 +83,7 @@ nav #name {
 	background: transparent;
 	text-align: center;
 	height: 90%;
-	padding-top: 12.5%;
+	/*padding-top: 12.5%;*/
 	margin-bottom: 10%;
 }
 
@@ -91,10 +91,11 @@ nav #name {
 	margin: 0 auto;
 	text-align: center;
 	padding-bottom: 5%;
+	padding-top: 5%;
 }
 
 .intro h1 {
-	font-size: 2em;
+	font-size: 3em;
 }
 
 .carousel-inner a img{
@@ -114,7 +115,7 @@ nav #name {
 	padding-top: 5%;
 	margin: 0 auto;
 	height: 90%;
-	margin-bottom: 7.5%;
+	padding-bottom: 5%;
 }
 
 .clearfix:after {
@@ -135,8 +136,9 @@ nav #name {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
-	width: 80%;
-	height: 30%;
+	padding-bottom: 5px;
+	width: 65%;
+	height: 25%;
 	background-color: rgba(0,0,0,0);
 }
 
@@ -163,7 +165,7 @@ nav #name {
 }
 /*Main*/
 .main {
-	padding-top: 15%;
+	padding-top: 10%;
 	margin: 0 auto;
 	width: 100%;
 	height: 90%;
