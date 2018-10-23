@@ -1,4 +1,47 @@
-@media only screen and (max-width: 767px) and (min-width: 459px) {
+@media only screen and (max-width: 1550px) {
+    nav {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 1550px) and (min-width: 767px){
+    .navbar-nav .page-scroll {
+        height: 100%;
+        padding: 15px 18px 15px 18px;
+    }
+}
+
+@media only screen and (max-width: 1550px) and (min-width: 1250px) {
+    .supporting .thumbnail {
+        width: 75%;
+    }
+
+    nav #name {
+        padding: 15px 0 15px 100px;
+    }
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 992px) {
+    .supporting .thumbnail {
+        width: 80%;
+    }
+
+    nav #name {
+        padding: 15px 0 15px 80px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .navbar-nav {
+        padding-right: 10%;
+    }
+
+    nav #name {
+        padding: 15px 0 15px 70px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 459px) {
     .supporting {
         height: auto;
     }
@@ -6,41 +49,51 @@
     .jumbotron, .main {
         height: auto;
     }
+
     .footer .col-md-6 {
         height: 4em;
         display: relative;
     }
 }
 
-@media only screen and (max-width: 458px) {
-    nav .container-fluid, .navbar-header, .navbar-collapse {
-        margin: 0 15px;
+@media only screen and (max-width: 767px) and (min-width: 458px) {
+    nav #name {
+        padding: 15px 0 15px 60px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #bs-example-navbar-collapse-1, .navbar-nav, .navbar-nav li {
         width: 100%;
+        margin: 0;
         padding: 0;
     }
 
-    .navbar-toggle {
-        margin-right: 35px;
-    }
-
     .navbar-nav {
-        margin-top: 0;
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .navbar-nav li {
         background-color: black;
     }
 
-    .navbar-nav li a{
-        padding: 15px 20px 15px 40px;
-        font-size: 3em;
+    .navbar-nav .page-scroll {
+        height: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 2em;
         text-align: center;
+        width: 100%;
     }
 
     .navbar-nav li a.page-scroll {
         color: rgb(48, 140, 255);
+    }
+}
+
+@media only screen and (max-width: 458px) {
+    nav #name {
+        padding: 15px 0 15px 40px;
+    }
+
+    .navbar-toggle {
+        margin-right: 35px;
     }
 
     .jumbotron {
