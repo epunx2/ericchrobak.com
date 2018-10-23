@@ -28,7 +28,9 @@ div {
 /*Nav*/
 nav {
 	background-color: #fff;
-	height: 1em;
+	height: 75px;
+	margin: 0;
+	padding: 0;
 }
 
 nav #name {
@@ -37,60 +39,33 @@ nav #name {
 	color: rgb(48, 140, 255);
 }
 
-/*.navbar,  .container-fluid, .navbar-header, .container-fluid .navbar-collapse {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}*/
-
-/*.btn {
-	margin-top: 8px;
-	margin-right: 75px;
-	background-color: rgb(211,223,236);
-	color: rgb(48, 140, 255);
-	border:none;
+nav .container-fluid {
+	height: 100%;
+	width: 100%;
+	padding: 0;
 }
 
-.btn: hover {
-	color: rgb(48, 140, 255);
+#bs-example-navbar-collapse-1 {
+	height: 100%;
+	width: 100%;
+}
+.navbar-nav, .navbar-header {
+	height: 100%;
 }
 
-.dropdown-menu {
-  border-radius:0px;
-  box-shadow:none;
-  border:none;
-  top: 40px;
-  min-width: 74px;
-  background-color: #000;
-  margin-right: 75px;
+.navbar-nav {
+	padding-right: 5%;
 }
-
-.dropdown-menu li {
-  margin-left: 0;
-  float:none;
+.navbar-nav .page-scroll {
+	height: 100%;
+	padding: 27px 27px 28px 27px;
 }
-
-.dropdown-menu li a {
-  color:rgb(211,223,236);
-  padding: 5px 0;
-  text-align: center;
-  display: block;
-}
-
-.dropdown-menu li a:hover {
-	color: #000;
-}*/
-
-/*.navbar-nav .page-scroll {
-	background-color: rgb(211,223,236);
-}*/
 
 /*Jumbotron*/
 .jumbotron {
 	background: transparent;
 	text-align: center;
 	height: 90%;
-	/*padding-top: 12.5%;*/
 	margin-bottom: 10%;
 }
 
@@ -119,10 +94,8 @@ nav #name {
 
 /*Supporting*/
 .supporting {
-	padding-top: 5%;
-	margin: 0 auto;
 	height: 90%;
-	padding-bottom: 5%;
+	margin-bottom: 10%;
 }
 
 .clearfix:after {
@@ -135,7 +108,18 @@ nav #name {
 }
 
 #supporting-nav {
-	margin-left: 3%;
+	margin:0 auto;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	width: 90%;
+}
+
+/*.nav-pills {
+	margin-bottom: 50px;
+}*/
+
+.nav-pills li a {
+	color: rgb(48, 140, 255);
 }
 
 .supporting .thumbnail {
@@ -153,14 +137,6 @@ nav #name {
     border-radius: 5px;
 }
 
-.nav-pills {
-	margin-bottom: 50px;
-}
-
-.nav-pills li a {
-	color: rgb(48, 140, 255);
-}
-
 .modal-body img {
 	border-radius: 5px;
 	background-color: rgba(0,0,0,0);
@@ -172,9 +148,7 @@ nav #name {
 }
 /*Main*/
 .main {
-	padding-top: 10%;
-	margin: 0 auto;
-	width: 100%;
+	margin-bottom: 10%;
 	height: 90%;
 }
 
@@ -203,7 +177,8 @@ nav #name {
 }
 
 .footer p {
-	margin: 0 auto;
+	margin-top:5%;
+	margin-bottom: 5%;
 	text-align: center;
 	color: rgb(211,223,236);
 }

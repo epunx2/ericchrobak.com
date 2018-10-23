@@ -19,15 +19,28 @@
         padding: 0;
     }
 
+    .navbar-toggle {
+        margin-right: 35px;
+    }
+
     .navbar-nav {
         margin-top: 0;
         margin-left: 0;
         width: 100%;
     }
 
+    .navbar-nav li {
+        background-color: black;
+    }
+
     .navbar-nav li a{
-        padding-right: 20px;
-        padding-left: 40px;
+        padding: 15px 20px 15px 40px;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .navbar-nav li a.page-scroll {
+        color: rgb(48, 140, 255);
     }
 
     .jumbotron {
@@ -48,40 +61,54 @@
         height: auto;
     }
 
+    #supporting-nav {
+        margin: 0 35px;
+    }
+
+    .supporting .nav-pills li a{
+        font-size: 2.5em;
+    }
+
     .supporting .thumbnail {
         width: 90%;
         margin: 10% 10%;
     }
 
+    .supporting .modal-lg .modal-title {
+        font-size: 4em;
+    }
+
+    .supporting .modal-lg .modal-footer p, .supporting .modal-lg .modal-footer .btn {
+        font-size: 2em;
+    }
+
     .main {
-        height: auto;
-        padding-bottom: 5%;
+        height: 80%;
+        padding: 15% 0;
     }
 
     .main #eric {
         margin-top: 10%;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         margin-left: 20%;
         margin-right: 15%;
     }
 
-    .main .col-md-6 {
-        margin-right: 5%;
+    .main .col-xs-6 {
+        margin-left: -2.5%;
     }
 
-    .footer .col-md-6:first-of-type {
-        height: 4em;
-        margin-left: 20%;
-        margin-right: 15%;
-        padding: 0;
+    .main .col-xs-6 p {
+        font-size: 2.5em;
+        text-align: left;
     }
 
-    .footer .col-md-6:nth-of-type(2) {
-        height: 4em;
-        margin-right: 15%
+    .footer p {
+        margin-top: 5%;
+        margin-left: -10%;
+        margin-bottom: 5%;
     }
-
-    .footer .col-md-6:nth-of-type(2) p {
-        font-size: 1.75em;
+    .footer p a {
+        font-size: 1.5em;
     }
 }
