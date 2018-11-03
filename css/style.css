@@ -10,7 +10,7 @@ html, body {
 
 body {
 	background: -moz-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../jpg/Cold-Chicago.jpg) no-repeat center center fixed;
-	background: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../jpg/Cold-Chicago.jpg) no-repeat center center fixed;
+	background: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../jpg/Cold-Chicago.jpg") center center fixed no-repeat;
 	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../jpg/Cold-Chicago.jpg) no-repeat center center fixed;
 	background-size: cover;
 	color: rgb(211,223,236);
@@ -137,6 +137,7 @@ nav .container-fluid {
 }
 
 .supporting .thumbnail img {
+	width: 100%;
     border-radius: 5px;
 }
 
@@ -145,19 +146,31 @@ nav .container-fluid {
 	background-color: rgba(0,0,0,0);
 }
 
+.modal-header h3 {
+	text-align: center;
+}
+
 .modal-footer p {
 	text-align: left;
 	color: rgb(185,197,211);
 }
+
+.supporting a.selected.thumbnail img {
+  border-top: 6px solid rgb(255, 48, 140);
+  border-bottom: 6px solid rgb(255, 48, 140);
+  border-right: 10px solid rgb(255, 48, 140);
+  border-left: 10px solid rgb(255, 48, 140);
+}
+
 /*Main*/
 .main {
 	margin-bottom: 10%;
-	height: 60%;
+	height: 70%;
 }
 
 .main #eric {
 	margin: 0 auto;
-	padding: 7.5% 0 5%;
+	padding: 7.5% 5%;
 	width: 90%;
 	color: rgb(48, 140, 255);
 	text-align: center;
@@ -172,8 +185,8 @@ nav .container-fluid {
 }
 
 .main ul li p {
-	text-align: left;
 	padding-left: 25%;
+	text-align: left;
 	color: rgb(255, 48, 140);
 }
 
@@ -186,7 +199,9 @@ nav .container-fluid {
 }
 
 .footer .row {
-	margin-left: -10%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .footer p {
@@ -197,7 +212,6 @@ nav .container-fluid {
 }
 
 .footer .one {
-	padding-left: 20%;
 	text-align: center;
 	color: rgb(255, 48, 140);
 	font-size: 1em;
