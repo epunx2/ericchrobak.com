@@ -1,0 +1,221 @@
+
+html, body {
+	margin: 0 auto;
+	padding: 0;
+	font-weight: 300;
+	font-family: 'Inconsolata', serif;
+	font-size: calc(1vw + 1vh);
+	width: 100%;
+	}
+
+body {
+	background: -moz-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../jpg/Cold-Chicago.jpg) no-repeat center center fixed;
+	background: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../jpg/Cold-Chicago.jpg") center center fixed no-repeat;
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../jpg/Cold-Chicago.jpg) no-repeat center center fixed;
+	background-size: cover;
+	color: rgb(211,223,236);
+	min-height: 100%;
+}
+
+div {
+	max-width: 100%;
+}
+
+.container, .container-fluid, .row {
+	width: 100%;
+}
+
+/*Nav*/
+nav {
+	background-color: #fff;
+	height: 75px;
+	margin: 0;
+	padding: 0;
+}
+
+nav #name {
+	margin: 0 auto;
+	padding: 27px 0 28px 125px;
+	font-family: 'Pacifico';
+	color: rgb(48, 140, 255);
+	height: 100%;
+}
+
+nav .container-fluid {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+#bs-example-navbar-collapse-1 {
+	width: 100%;
+}
+
+.navbar-nav, .navbar-header {
+	height: 100%;
+}
+
+.navbar-nav {
+	padding-right: 10%;
+}
+
+.navbar-nav .page-scroll {
+	height: 100%;
+	padding: 27px 27px 28px 27px;
+}
+
+/*Jumbotron*/
+.jumbotron {
+	background: transparent;
+	text-align: center;
+	height: 90%;
+	margin-bottom: 10%;
+}
+
+.intro {
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 5%;
+	padding-top: 7.5%;
+}
+
+.intro h1 {
+	font-size: 3em;
+}
+
+.carousel-inner a img{
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0);
+	width: 100%;
+}
+
+#carousel-example-generic {
+	margin: 0 auto;
+	width: 60%;
+	height: 50%;
+}
+
+/*Supporting*/
+.supporting {
+	height: 90%;
+	margin-bottom: 10%;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+#supporting-nav {
+	margin:0 auto;
+	padding-bottom: 5%;
+	padding-top: 7.5%;
+	width: 90%;
+}
+
+.nav-pills li {
+	margin-right: 1%;
+}
+.nav-pills li a {
+	color: rgb(48, 140, 255);
+	font-size: 1.5em;
+}
+
+.supporting .thumbnail {
+	border: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	padding-bottom: 5px;
+	width: 65%;
+	height: 25%;
+	background-color: rgba(0,0,0,0);
+}
+
+.supporting .thumbnail img {
+	width: 100%;
+    border-radius: 5px;
+}
+
+.modal-body img {
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0);
+}
+
+.modal-header h3 {
+	text-align: center;
+}
+
+.modal-footer p {
+	text-align: left;
+	color: rgb(185,197,211);
+}
+
+/*Main*/
+.main {
+	margin-bottom: 10%;
+	height: 70%;
+}
+
+.main #eric {
+	margin: 0 auto;
+	padding: 7.5% 5%;
+	width: 90%;
+	color: rgb(48, 140, 255);
+	text-align: center;
+}
+
+.main p {
+	font-size: 2em;
+}
+
+.main ul li {
+	list-style: none;
+}
+
+.main ul li p {
+	padding-left: 25%;
+	text-align: left;
+	color: rgb(255, 48, 140);
+}
+
+/*Footer*/
+
+.footer {
+	position: absolute;
+	height: 75px;
+	width: 100%;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul {
+  	list-style-type: none;
+		margin-top: 5%;
+		margin-bottom: 2.5%;
+  	text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+		text-align: center;
+    padding: 0 1.5%;
+}
+
+.footer span {
+		color: rgb(211,223,236);
+  	font-size: 1.25em;
+}
+
+.footer span:hover {
+		text-decoration: none;
+		color: rgb(255, 48, 140);
+}
