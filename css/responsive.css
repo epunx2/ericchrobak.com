@@ -1,12 +1,18 @@
-@media only screen and (max-width: 1550px) {
-    nav {
-        height: 50px;
-    }
-}
+@media only screen and (min_width: 1551px){
+  nav {
+  	height: 75px;
+  }
 
+  nav #name {
+  	padding: 27px 0 28px 125px;
+  }
+
+  .navbar-nav .page-scroll {
+  	padding: 27px 27px 28px 27px;
+  }
+}
 @media only screen and (max-width: 1550px) and (min-width: 767px){
     .navbar-nav .page-scroll {
-        height: 100%;
         padding: 15px 18px 15px 18px;
     }
 }
@@ -22,12 +28,12 @@
 }
 
 @media only screen and (max-width: 1250px) and (min-width: 992px) {
-    .supporting .thumbnail {
-        width: 80%;
-    }
-
     nav #name {
         padding: 15px 0 15px 80px;
+    }
+
+    .supporting .thumbnail {
+        width: 80%;
     }
 }
 
@@ -41,6 +47,7 @@
 }
 
 @media only screen and (max-width: 991px) {
+    Added to 458 media query
     .supporting a.unselected.thumbnail img {
         display: none;
     }
@@ -51,10 +58,6 @@
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px){
-    .navbar-nav {
-        padding-right: 10%;
-    }
-
     nav #name {
         padding: 15px 0 15px 70px;
     }
@@ -65,81 +68,96 @@
         height: auto;
     }
 
-    .jumbotron, .main {
+    /* .jumbotron, .main {
         height: auto;
-    }
+    } */
 
     .footer .col-md-6 {
         height: 4em;
         display: relative;
     }
+
+    #carousel-example-generic {
+      	width: 85%;
+    }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 458px) {
+@media only screen and (min-width: 768px){
+    .navbar-nav li a.page-scroll {
+        color: #777;
+    }
+
+    .navbar-nav {
+        padding-right: 10%;
+    }
+
+    .intro {
+        margin: 15% auto;
+    }
+}
+
+@media only screen and (max-width:767px) {
+  .navbar-nav .page-scroll {
+		  font-size: 2em;
+  }
+
+  #bs-example-navbar-collapse-1, .navbar-nav, .navbar-nav li {
+  		margin: 0;
+  		padding: 0;
+  		background-color: black;
+  		color: rgb(48, 140, 255);
+  }
+
+  #bs-example-navbar-collapse-1{
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 459px) {
     nav #name {
         padding: 15px 0 15px 60px;
     }
+
+    .intro {
+        margin: 25% auto;
+    }
 }
 
-@media only screen and (max-width: 767px) {
-    #bs-example-navbar-collapse-1, .navbar-nav, .navbar-nav li {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        background-color: black;
-        color: rgb(48, 140, 255);
+@media only screen and (max-width: 900px) and (min-width: 400px) and (orientation: landscape) {
+    .intro {
+        margin: 5% auto;
     }
 
-    .container-fluid .navbar-header {
-        margin: 0;
-        padding: 0;
+    #carousel-example-generic {
+      	width: 45%;
+    }
+}
+
+@media only screen and (max-width: 900px) and (max-width: 399px) and (orientation: landscape) {
+    .intro {
+        margin: 2.5% auto;
     }
 
-    .navbar-nav .page-scroll {
-        height: 100%;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: 2em;
-        text-align: center;
-        width: 100%;
-    }
-
-    .navbar-nav li a.page-scroll {
-        color: rgb(48, 140, 255);
-    }
-
-    #bs-example-navbar-collapse-1, .navbar-nav, .navbar-nav li:active {
-        background-color: #fff;
-        color: rgb(48, 140, 255);
-    }
-
-    #bs-example-navbar-collapse-1, .navbar-nav, .navbar-nav li:hover {
-        background-color: #fff;
-        color: rgb(48, 140, 255);
+    #carousel-example-generic {
+      	width: 35%;
     }
 }
 
 @media only screen and (max-width: 458px) {
-    nav #name {
-        padding: 15px 0 15px 40px;
-    }
 
-    .navbar-toggle {
-        margin-right: 35px;
-    }
+    /* Project Showcase */
 
-    .jumbotron {
-        padding: 25% 0;
-    }
+    /* .jumbotron {
+        padding: 0;
+    } */
 
-    .jumbotron h1 {
-        padding: 20% 0;
-        font-size: 4em;
-    }
 
-    #carousel-example-generic {
-        width: 85%
-    }
+
+    /* #carousel-example-generic {
+        width: 90%
+    } */
+
+    /* Portfolio */
 
     .supporting {
         padding-top: 25%;
@@ -159,6 +177,14 @@
         margin: 10% 10%;
     }
 
+    .supporting a.unselected.thumbnail img {
+        display: none;
+    }
+
+    .supporting a.selected.thumbnail img {
+        display: show;
+    }
+
     .supporting .modal-lg .modal-title {
         font-size: 4em;
     }
@@ -166,7 +192,8 @@
     .supporting .modal-lg .modal-footer p, .supporting .modal-lg .modal-footer .btn {
         font-size: 2em;
     }
-    /*Main Section*/
+
+    /* About Section*/
     .main {
         height: 75%;
     }
@@ -195,24 +222,34 @@
         padding-left: 15%;
     }
 
+    /* Footer Section  */
     .footer {
+        height: 50px;
+        width: 100%;
+        background-color: #d3dfec;
+    }
+
+    .footer div.container, .footer div.container .row {
         height: 100%;
         width: 100%;
-        margin-top: 5%;
-        margin-bottom: 2.5%;
     }
 
     .footer ul {
+        height: 100%;
+        width: 100%;
+      	list-style-type: none;
         text-align: center;
         margin: 0 auto;
     }
 
   	.footer ul li {
+        display: inline-block;
       	text-align: center;
+        padding: 5px 10px;
     }
 
     .footer span {
-        font-size: 2em;
-      	padding: 0 3%;
+        font-size: 20px;
+        color: #308cff;
     }
 }
