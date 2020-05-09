@@ -9,11 +9,11 @@ html, body {
 }
 
 body {
-	background: -moz-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../jpg/Cold-Chicago.jpg) no-repeat center center fixed;
-	background: -webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../jpg/Cold-Chicago.jpg") center center fixed no-repeat;
-	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../jpg/Cold-Chicago.jpg) no-repeat center center fixed;
+	background: -moz-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../jpg/Cold-Chicago.jpg) no-repeat center center fixed;
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../jpg/Cold-Chicago.jpg") center center fixed no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../jpg/Cold-Chicago.jpg) no-repeat center center fixed;
 	background-size: cover;
-	color: rgb(211,223,236);
+	color: rgb(211, 223, 236);
 	min-height: 100%;
 }
 
@@ -24,13 +24,13 @@ div {
 .container, .container-fluid, .row {
 	width: 100%;
 }
-/* Navbar */
 
+/* Navbar */
 nav {
-		background-color: #fff;
-		height: 50px;
-		margin: 0;
-		padding: 0;
+	background-color: #fff;
+	height: 50px;
+	margin: 0;
+	padding: 0;
 }
 
 nav .container-fluid {
@@ -40,8 +40,8 @@ nav .container-fluid {
 }
 
 .container-fluid .navbar-header {
-		margin: 0;
-		padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .navbar-nav, .navbar-header {
@@ -49,37 +49,36 @@ nav .container-fluid {
 }
 
 .navbar-nav .page-scroll {
-		height: 100%;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		text-align: center;
-		width: 100%;
+	height: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	width: 100%;
 }
 
 .navbar-nav li a.page-scroll {
-		color: rgb(48, 140, 255);
+	color: rgb(48, 140, 255);
 }
 
 #bs-example-navbar-collapse-1, .navbar-nav, .navbar-nav li:active {
-		background-color: #fff;
-		color: rgb(48, 140, 255);
+	background-color: #fff;
+	color: rgb(48, 140, 255);
 }
 
 #bs-example-navbar-collapse-1, .navbar-nav, .navbar-nav li:hover {
-		background-color: #fff;
-		color: rgb(48, 140, 255);
+	background-color: #fff;
+	color: rgb(48, 140, 255);
 }
 
 nav #name {
-		margin: 0 auto;
-		padding: 15px 0 15px 40px;
-		font-family: 'Pacifico';
-		color: rgb(48, 140, 255);
-		height: 100%;
+	margin: 0 auto 0 2em;
+	font-family: 'Pacifico';
+	color: rgb(48, 140, 255);
+	height: 100%;
 }
 
 .navbar-toggle {
-		margin-right: 35px;
+	margin-right: 25px;
 }
 
 /*Jumbotron*/
@@ -98,9 +97,9 @@ nav #name {
 	font-size: 3.5em;
 }
 
-.carousel-inner a img{
+.carousel-inner a img {
 	border-radius: 5px;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 	width: 100%;
 }
 
@@ -126,7 +125,7 @@ nav #name {
 }
 
 #supporting-nav {
-	margin:0 auto;
+	margin: 0 auto;
 	padding-bottom: 5%;
 	padding-top: 7.5%;
 	width: 90%;
@@ -135,6 +134,7 @@ nav #name {
 .nav-pills li {
 	margin-right: 1%;
 }
+
 .nav-pills li a {
 	color: rgb(48, 140, 255);
 	font-size: 1.5em;
@@ -148,17 +148,17 @@ nav #name {
 	padding-bottom: 5px;
 	width: 65%;
 	height: 25%;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .supporting .thumbnail img {
 	width: 100%;
-    border-radius: 5px;
+	border-radius: 5px;
 }
 
 .modal-body img {
 	border-radius: 5px;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .modal-header h3 {
@@ -167,7 +167,7 @@ nav #name {
 
 .modal-footer p {
 	text-align: left;
-	color: rgb(185,197,211);
+	color: rgb(185, 197, 211);
 }
 
 /*Main*/
@@ -201,37 +201,37 @@ nav #name {
 /*Footer
 
 .footer {
-	position: absolute;
-	height: 75px;
-	width: 100%;
+position: absolute;
+height: 75px;
+width: 100%;
 }
 
 .footer .row {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+width: 100%;
+margin: 0;
+padding: 0;
 }
 
 .footer ul {
-  	list-style-type: none;
-		margin-top: 5%;
-		margin-bottom: 2.5%;
-  	text-align: center;
+list-style-type: none;
+margin-top: 5%;
+margin-bottom: 2.5%;
+text-align: center;
 }
 
 .footer ul li {
-    display: inline-block;
-		text-align: center;
-    padding: 0 1.5%;
+display: inline-block;
+text-align: center;
+padding: 0 1.5%;
 }
 
 .footer span {
-		color: rgb(211,223,236);
-  	font-size: 1.25em;
+color: rgb(211,223,236);
+font-size: 1.25em;
 }
 
 .footer span:hover {
-		text-decoration: none;
-		color: rgb(255, 48, 140);
+text-decoration: none;
+color: rgb(255, 48, 140);
 }
 */
