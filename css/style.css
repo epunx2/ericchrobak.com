@@ -94,7 +94,7 @@ nav #name {
 }
 
 .jumbotron h1 {
-	font-size: 3.5em;
+	font-size: 3em;
 }
 
 .carousel-inner a img {
@@ -198,6 +198,36 @@ nav #name {
 	color: rgb(255, 48, 140);
 }
 
+/* Footer Section  */
+.footer {
+	background-color: #d3dfec;
+}
+
+.footer, .footer div.container, .footer div.container .row, .footer ul {
+	width: 100%;
+}
+
+.footer .row, .footer ul {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.footer ul {
+	list-style-type: none;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.footer ul li {
+	height: 50px;
+	display: inline-block;
+	padding: 5px 1em;
+}
+
+.footer span {
+	color: #308cff;
+	font-size: 35px;
+}
 /*Footer
 
 .footer {
