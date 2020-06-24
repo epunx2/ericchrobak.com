@@ -1,0 +1,22 @@
+{% for project in site.data.projects %}
+<div class="modal fade" id="{{ project.modal-id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">{{ project.name }}</h3>
+                <!--change the style to center-->
+            </div>
+            <div class="modal-body">
+                <img width="100%" src="{{ project.image-url }}">
+            </div>
+            <div class="modal-footer">
+                <p>{{ project.description }}</p>
+                <a class="btn btn-default" target="blank" href="{{ project.url }}">View</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endfor %}

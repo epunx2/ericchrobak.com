@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146581885-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-146581885-1');
+    </script>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <title>Red Eye Photography</title>
+  </head>
+  
+  <body>
+    <div class="header">
+            <h1>Red Eye Photography</h1>
+    </div>
+
+
+    <div class="nav">
+      <div class="container">
+      	<ul>
+      		<li>home</li>
+      		<li>about</li>
+      		<li>gallery</li>
+      		<li>contact</li>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+		<div class="col-md-4">
+			<img src="https://s3.amazonaws.com/codecademy-content/projects/red-eye/p1.jpg" class="img-responsive">
+		</div>
+		<div class="col-md-4">
+			<img src="https://s3.amazonaws.com/codecademy-content/projects/red-eye/p2.jpg" class="img-responsive">
+		</div>
+		<div class="col-md-4">
+			<img src="https://s3.amazonaws.com/codecademy-content/projects/red-eye/p3.jpg" class="img-responsive">
+		</div>
+	  </div>
+      <div class="row">
+      	<div class="col-md-4">
+      		<img src="https://s3.amazonaws.com/codecademy-content/projects/red-eye/p4.jpg" class="img-responsive">
+		</div>
+		<div class="col-md-4">
+			<img src="https://s3.amazonaws.com/codecademy-content/projects/red-eye/p5.jpg" class="img-responsive">
+		</div>
+		<div class="col-md-4">
+			<img src="https://s3.amazonaws.com/codecademy-content/projects/red-eye/p6.jpg" class="img-responsive">
+		</div>
+      </div>
+    </div>
+    
+    <div class="footer">
+    	<div class="container">
+    		<p>photography by matthew wiebe</p>
+    	</div>
+    </div>
+
+  </body>
+</html>
+<!--
+1. In the header, add text for a heading. We used "Red Eye Photography". Adjust the heading's margins and width so that it matches the final result. Remember to view your project by visiting http://localhost:8000/ in the browser.
+
+2. In the nav section, add a list containing four items for Home, About, Gallery, and Contact. Write CSS to display them on the same line.
+
+3. In the main section, there are two <div class="row">...</div> rows. Inside each row, use Bootstrap's grid create three equal-sized columns. You can also learn more about Bootstrap in our Make a Website course.
+
+4. Inside each column, add an image. Feel free to use your own images. Here are the ones we used: one, two, three, four, five, and six. Use Bootstrap's CSS class img-responsive to style each image. Feel free to use your own images.
+
+5. Add a footer section with text for the copyright. Write CSS to align as shown in the final result.

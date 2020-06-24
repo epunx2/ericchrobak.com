@@ -11,17 +11,9 @@ var main = function() {
     $('.thumbnail').removeClass('selected');
     $('.thumbnail').addClass('unselected');
     switch (category) {
-      case "nav-javascript":
-        $('.javascript').removeClass('unselected');
-        $('.javascript').addClass('selected');
-        break;
       case "nav-ruby":
         $('.ruby').removeClass('unselected');
         $('.ruby').addClass('selected');
-        break;
-      case "nav-zohocreator":
-        $('.zohocreator').removeClass('unselected');
-        $('.zohocreator').addClass('selected');
         break;
       case "nav-html":
         $('.html').removeClass('unselected');
@@ -29,7 +21,6 @@ var main = function() {
         break;
       default:
         $('.thumbnail').removeClass('unselected');
-        $('.thumbnail').addClass('selected');
     }
 
     $('.nav li').removeClass('active');

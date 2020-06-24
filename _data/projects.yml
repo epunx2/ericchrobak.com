@@ -1,0 +1,45 @@
+- modal-id: myModal1
+  name: Lite Brite
+  image-url: jpg/websites/lite-brite.png
+  description: An interactive Lite Brite app. HTML, JavaScript, jQuery, and CSS. Features click listeners, class toggles when a dot is selected or a color, and setInterval for the blink.
+  url: work/websites/Lite-Brite/index.html
+- modal-id: myModal2
+  name: Threadly
+  image-url: jpg/websites/threadly.png
+  description: jQuery project for Codecademy. Thread for messages.Uses submit to prepend comment to HTML as a li element.
+  url: work/websites/Threadly/index.html
+- modal-id: myModal3
+  name: Pocketbook
+  image-url: jpg/websites/pocket-book.png
+  description: Project for Codecademy. HTML, CSS, JavaScript, and jQuery. Features validation for blank fields, improper email, duplicate email, and password shorter than 8 characters.
+  url: work/websites/Pocket-Book/index.html
+- modal-id: myModal4
+  name: Move Gear
+  image-url: jpg/websites/move-gear.png
+  description: An interactive Lite Brite app. HTML, JavaScript, jQuery, and CSS. Features click listeners, class toggles when a dot is selected or a color, and setInterval for the blink.
+  url: work/websites/Lite-Brite/index.html
+- modal-id: myModal5
+  name: Innovation Cloud
+  image-url: jpg/websites/innovation-cloud.png
+  description: HTML & CSS project for Codecademy.
+  url: work/websites/Innovation-Cloud/index.html
+- modal-id: myModal6
+  name: Adoptly
+  image-url: jpg/websites/adoptly.png
+  description: HTML & CSS project for Codecademy.
+  url: work/websites/Adoptly/index.html
+- modal-id: myModal7
+  name: Armando Perez
+  image-url: jpg/websites/armando-perez.png
+  description: Project for Codecademy. HTML, CSS, JavaScript, and jQuery. Features On click of buttons at upper right uses switch statement to put border around thumbnails.
+  url: work/websites/Armando-Perez/index.html
+- modal-id: myModal8
+  name: Coffee CLI
+  image-url: jpg/websites/coffee-cli-app.png
+  description: Ruby CLI for Flatiron School. The tool scrapes information from a website and creates opjects with that information.
+  url: work/apps/coffee-cli.html
+- modal-id: myModal9
+  name: BestBite
+  image-url: jpg/websites/best-bite.png
+  description: HTML & CSS project for Codecademy.
+  url: work/websites/Best-Bite/index.html

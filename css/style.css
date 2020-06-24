@@ -1,4 +1,15 @@
 /* Make this the responsive style sheet */
+/*
+Blue: #0359c6
+Gray: #595F72
+White: #FDFFFC
+Black: #0A0903
+Red: #FB3640
+Yellow: #FFB238
+Green: #86BA90
+Pink: #E5C2C0
+*/
+
 html, body {
 	margin: 0 auto;
 	padding: 0;
@@ -13,7 +24,7 @@ body {
 	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../jpg/Cold-Chicago.jpg") center center fixed no-repeat;
 	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../jpg/Cold-Chicago.jpg) no-repeat center center fixed;
 	background-size: cover;
-	color: rgb(211, 223, 236);
+	color: #FDFFFC; /* White */
 	min-height: 100%;
 }
 
@@ -27,7 +38,7 @@ div {
 
 /* Navbar */
 nav {
-	background-color: #fff;
+	background-color: #FDFFFC; /* White */
 	height: 50px;
 	margin: 0;
 	padding: 0;
@@ -57,23 +68,23 @@ nav .container-fluid {
 }
 
 .navbar-nav li a.page-scroll {
-	color: rgb(48, 140, 255);
+	color: #0359c6; /* Blue */
 }
 
 #bs-example-navbar-collapse-1, .navbar-nav, .navbar-nav li:active {
-	background-color: #fff;
-	color: rgb(48, 140, 255);
+	background-color: #FDFFFC; /* White */
+	color: #0359c6; /* Blue */
 }
 
 #bs-example-navbar-collapse-1, .navbar-nav, .navbar-nav li:hover {
-	background-color: #fff;
-	color: rgb(48, 140, 255);
+	background-color: #FDFFFC; /* White */
+	color: #0359c6; /* Blue */
 }
 
 nav #name {
 	margin: 0 auto 0 2em;
 	font-family: 'Pacifico';
-	color: rgb(48, 140, 255);
+	color: #0359c6; /* Blue */
 	height: 100%;
 }
 
@@ -99,7 +110,7 @@ nav #name {
 
 .carousel-inner a img {
 	border-radius: 5px;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: #0A0903; /* Black */
 	width: 100%;
 }
 
@@ -109,10 +120,17 @@ nav #name {
 	height: 50%;
 }
 
-/*Supporting*/
+/* Portfolio */
 .supporting {
-	height: 90%;
-	margin-bottom: 10%;
+	padding-top: 15%;
+	height: auto;
+	min-height: 100%;
+	margin-top: 10%;
+}
+
+.supporting .row {
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .clearfix:after {
@@ -122,6 +140,10 @@ nav #name {
 	visibility: hidden;
 	height: 0;
 	line-height: 0;
+}
+
+.col-md-4 {
+	padding: 0;
 }
 
 #supporting-nav {
@@ -135,39 +157,60 @@ nav #name {
 	margin-right: 1%;
 }
 
-.nav-pills li a {
-	color: rgb(48, 140, 255);
-	font-size: 1.5em;
+.nav-pills li.active a {
+	background-color: #0359c6!important; /* Blue */
+	color: #FDFFFC!important; /* White */
+}
+
+.nav-pills li.active a:hover {
+	background-color: #0359c6!important; /* Blue */
+	color: #FDFFFC!important; /* White */
+}
+
+.nav-pills li a:hover {
+	background-color: #FDFFFC!important; /* White */
+}
+
+.supporting-nav .active li a {
+	color: #FDFFFC!important; /* White */
+}
+
+.supporting .nav-pills li a {
+	font-size: 2.5em;
+	color: #0359c6; /* Blue */
 }
 
 .supporting .thumbnail {
-	border: 0;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
-	padding-bottom: 5px;
-	width: 65%;
-	height: 25%;
-	background-color: rgba(0, 0, 0, 0);
+	width: 90%;
+	margin: 0 auto 5%;
+	padding: 0!important;
+	border: 0!important;
 }
 
-.supporting .thumbnail img {
-	width: 100%;
-	border-radius: 5px;
+.supporting a.unselected.thumbnail img {
+	display: none;
 }
 
+.supporting a.selected.thumbnail img {
+	display: show;
+	border: 5px solid #FB3640; /* Red */
+	border-radius: 4px;
+}
+
+/* Modals */
 .modal-body img {
 	border-radius: 5px;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: #0A0903; /* Black */
 }
 
 .modal-header h3 {
-	text-align: center;
+	text-align: left;
+	color: #0A0903; /* Black */
 }
 
 .modal-footer p {
 	text-align: left;
-	color: rgb(185, 197, 211);
+	color: #595F72; /* Gray */
 }
 
 /*Main*/
@@ -180,7 +223,7 @@ nav #name {
 	margin: 0 auto;
 	padding: 7.5% 5%;
 	width: 90%;
-	color: rgb(48, 140, 255);
+	color: #0359c6; /* Blue */
 	text-align: center;
 }
 
@@ -195,12 +238,12 @@ nav #name {
 .main ul li p {
 	padding-left: 25%;
 	text-align: left;
-	color: rgb(255, 48, 140);
+	color: #FB3640; /* Red */
 }
 
 /* Footer Section  */
 .footer {
-	background-color: #d3dfec;
+	background-color: #FDFFFC; /* White */
 }
 
 .footer, .footer div.container, .footer div.container .row, .footer ul {
@@ -225,43 +268,6 @@ nav #name {
 }
 
 .footer span {
-	color: #308cff;
+	color: #0359c6; /* Blue */
 	font-size: 35px;
 }
-/*Footer
-
-.footer {
-position: absolute;
-height: 75px;
-width: 100%;
-}
-
-.footer .row {
-width: 100%;
-margin: 0;
-padding: 0;
-}
-
-.footer ul {
-list-style-type: none;
-margin-top: 5%;
-margin-bottom: 2.5%;
-text-align: center;
-}
-
-.footer ul li {
-display: inline-block;
-text-align: center;
-padding: 0 1.5%;
-}
-
-.footer span {
-color: rgb(211,223,236);
-font-size: 1.25em;
-}
-
-.footer span:hover {
-text-decoration: none;
-color: rgb(255, 48, 140);
-}
-*/

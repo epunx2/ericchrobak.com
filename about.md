@@ -1,0 +1,46 @@
+---
+layout: page
+title: About
+header-img: "jpg/Cold-Chicago.jpg"
+---
+
+<p id="eric">Eric is a web developer specializing in:</p>
+<div class="col-xs-6">
+    <ul>
+        <li>
+            <p>Ruby</p>
+        </li>
+        <li>
+            <p>JavaScript</p>
+        </li>
+        <li>
+            <p>HTML</p>
+        </li>
+        <li>
+            <p>Rack</p>
+        </li>
+        <li>
+            <p>Bootstrap</p>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-6">
+    <ul>
+        <li>
+            <p>SQLite</p>
+        </li>
+        <li>
+            <p>jQuery</p>
+        </li>
+        <li>
+            <p>CSS</p>
+        </li>
+        <li>
+            <p>Sinatra</p>
+        </li>
+        <li>
+            <p>Python</p>
+        </li>
+    </ul>
+</div>
+<p>Eric has had a fascination with computers and their inner workings since his early high school years when his mother first bought a Gateway 2000 that ran windows 95. After pursuing a few career paths he began his journey coding in May of 2015 with his first Codecademy online classes learning HTML, CSS, and JavaScript. In April 2018 he did the online web development course at Flatiron School based in NYC. He is happily married with 2 children and resides near Chicago where the summers are hot and winters cold!<br>He is interested in helping small businesses and entrepreneurs use software to solve problems they have.</p>

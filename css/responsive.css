@@ -1,5 +1,16 @@
+/*
+Blue: #0359c6
+Gray: #595F72
+White: #FDFFFC
+Black: #0A0903
+Red: #FB3640
+Yellow: #FFB238
+Green: #86BA90
+Pink: #E5C2C0
+*/
+
 @media only screen and (min-width: 1175px) {
-    nav {
+    nav, .footer {
         height: 2.2em;
     }
 
@@ -12,8 +23,6 @@
     .navbar-nav .page-scroll {
         padding: 0.9em;
     }
-
-
 }
 
 @media only screen and (max-width: 1550px) and (min-width: 1250px) {
@@ -29,11 +38,16 @@
 }
 
 @media only screen and (min-width: 992px) {
+    .supporting {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
     .supporting a.selected.thumbnail img {
-        border-top: 6px solid rgb(255, 48, 140);
-        border-bottom: 6px solid rgb(255, 48, 140);
-        border-right: 10px solid rgb(255, 48, 140);
-        border-left: 10px solid rgb(255, 48, 140);
+        border-top: 6px solid #FB3640; /* Red */
+        border-bottom: 6px solid #FB3640; /* Red */
+        border-right: 10px solid #FB3640; /* Red */
+        border-left: 10px solid #FB3640; /* Red */
     }
 }
 
@@ -54,15 +68,13 @@
     }
 
     .main {
-    height: auto;
+        height: auto;
     }
 
     .footer .col-md-6 {
         height: 4em;
         display: relative;
     }
-
-
 }
 
 @media only screen and (min-width: 1701px) {
@@ -97,11 +109,29 @@
     }
 
     .navbar-nav li a.page-scroll {
-        color: #777;
+        color: #595F72; /* Gray */
     }
 
     .navbar-nav {
         padding-right: 10%;
+    }
+
+    .jumbotron h1 {
+        margin: 10% 0;
+    }
+
+    #carousel-example-generic {
+        width: 45%;
+    }
+
+    #supporting-nav {
+        padding-top: 7%;
+        padding-bottom: 2.5%;
+    }
+
+    .footer span:hover {
+        text-decoration: none;
+        color: #FB3640; /* Red */
     }
 }
 
@@ -113,8 +143,8 @@
     #bs-example-navbar-collapse-1, .navbar-nav, .navbar-nav li {
         margin: 0;
         padding: 0;
-        background-color: black;
-        color: rgb(48, 140, 255);
+        background-color: #0A0903; /* Black */
+        color: #0359c6; /* Blue */
     }
 
     #bs-example-navbar-collapse-1 {
@@ -151,37 +181,29 @@
     #carousel-example-generic {
         width: 55%;
     }
+
+    .supporting {
+        padding-top: 0;
+    }
 }
 
 @media only screen and (max-width: 458px) {
-
-    /* Portfolio */
-    .supporting {
-        padding-top: 25%;
-        height: auto;
-    }
-
+    /*Supporting*/
     #supporting-nav {
-        margin: 0 35px;
+    	margin: 0 auto;
     }
 
-    .supporting .nav-pills li a {
-        font-size: 2.5em;
+    .nav-pills li a {
+    	color: #0359c6; /* Blue */
+    	font-size: 1.5em;
     }
 
-    .supporting .thumbnail {
-        width: 90%;
-        margin: 10% 10%;
+    .supporting .thumbnail img {
+    	width: 100%;
+    	border-radius: 4px;
     }
 
-    .supporting a.unselected.thumbnail img {
-        display: none;
-    }
-
-    .supporting a.selected.thumbnail img {
-        display: show;
-    }
-
+    /* Modals */
     .supporting .modal-lg .modal-title {
         font-size: 4em;
     }
