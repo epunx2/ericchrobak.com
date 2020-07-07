@@ -214,9 +214,26 @@ nav #name {
 }
 
 /*Main*/
+
 .main {
-	margin-bottom: 10%;
-	height: 70%;
+	margin: 15% auto;
+}
+
+.main .row {
+	margin: auto;
+}
+
+.row div {
+	margin: 15% auto;
+}
+
+#about img {
+	width: 60%;
+}
+
+#large-content {
+	display: none;
+	width: 90%;
 }
 
 .main #eric {
@@ -244,6 +261,8 @@ nav #name {
 /* Footer Section  */
 .footer {
 	background-color: #FDFFFC; /* White */
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
 .footer, .footer div.container, .footer div.container .row, .footer ul {
@@ -267,7 +286,11 @@ nav #name {
 	padding: 5px 1em;
 }
 
-.footer span {
+.footer i {
 	color: #0359c6; /* Blue */
 	font-size: 35px;
+}
+
+.footer .copyright {
+	text-align: center;
 }

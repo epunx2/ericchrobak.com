@@ -1,6 +1,8 @@
 ---
 layout: post
-author: eric
+title: Sinatra and MVC
+date: 2018-09-27 17:54:10 +0000
+author: Eric Chrobak
 ---
 
 Developing an app involves a level of complexity that would make using a single file for all the code completely useless. This is due the difficulity of debugging a large file and make changes when necessary. In addition such a file would be difficult to read.

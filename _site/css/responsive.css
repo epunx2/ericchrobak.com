@@ -10,7 +10,7 @@ Pink: #E5C2C0
 */
 
 @media only screen and (min-width: 1175px) {
-    nav, .footer {
+    nav {
         height: 2.2em;
     }
 
@@ -23,6 +23,19 @@ Pink: #E5C2C0
     .navbar-nav .page-scroll {
         padding: 0.9em;
     }
+
+    #about-me {
+    	height: 95%;
+    }
+
+    #about, #profile {
+    	margin-top: 10%!important;
+    }
+
+    /* #profile-image {
+    	margin: 30% 10%;
+    	width:90%;
+    } */
 }
 
 @media only screen and (max-width: 1550px) and (min-width: 1250px) {
@@ -72,7 +85,7 @@ Pink: #E5C2C0
     }
 
     .footer .col-md-6 {
-        height: 4em;
+        /* height: 4em; */
         display: relative;
     }
 }
@@ -129,7 +142,7 @@ Pink: #E5C2C0
         padding-bottom: 2.5%;
     }
 
-    .footer span:hover {
+    .footer i:hover {
         text-decoration: none;
         color: #FB3640; /* Red */
     }
@@ -213,11 +226,7 @@ Pink: #E5C2C0
     }
 
     /* About Section*/
-    .main {
-        height: 75%;
-    }
-
-    .main .row, .main #eric {
+    .main #eric {
         margin: 0;
         padding: 0;
         width: 100%;

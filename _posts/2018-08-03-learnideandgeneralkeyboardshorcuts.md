@@ -1,12 +1,12 @@
 ---
 layout: post
-title:      "LEARN IDE & General Keyboard Shorcuts"
-date:       2018-08-03 20:58:16 -0400
-permalink:  learn_ide_and_general_keyboard_shorcuts
+title: LEARN IDE & General Keyboard Shorcuts
+date: 2018-08-03 20:58:16 -0400
+author: Eric Chrobak
 ---
 
 
-I love that coding and programming involves shortcuts to increase productivity. 
+I love that coding and programming involves shortcuts to increase productivity.
 
 One of my favorite shortcuts while working on a computer is keyboard shorctus!
 
@@ -16,9 +16,9 @@ I will provide some common ones and then those more specific to Learn IDE.
 CMD/⌘ - this is the Command/ button on the mac. PC users use your Ctrl(Control) key.
 These are is located on the lower left of your keyboard.
 
-**Instructions:** 
-CMD + ; - press the CMD button and press the ";" key. 
-Don't press the + key. I added that to separate the two keys visually. 
+**Instructions:**
+CMD + ; - press the CMD button and press the ";" key.
+Don't press the + key. I added that to separate the two keys visually.
 
 ## General Shortcuts
 
@@ -39,17 +39,17 @@ CMD + U - Underline - changes cursor and/or  highlighted text to underlined.
 
 ## Learn IDE Shortcuts
 
-CMD + ;  -  switch between text editor and console. 
+CMD + ;  -  switch between text editor and console.
 
-CMD + i - toggle the console on or off. 
+CMD + i - toggle the console on or off.
 
-CMD + \ - will toggle the file tree on the left side. 
+CMD + \ - will toggle the file tree on the left side.
 
-CMD + / - will comment out the line your cursor is on and if you have mutliple lines hightlighted then CMD-/ will comment out all the lines you have highlighted. 
+CMD + / - will comment out the line your cursor is on and if you have mutliple lines hightlighted then CMD-/ will comment out all the lines you have highlighted.
 
-CMD + 1 - if you have mutliple files open in the learn ide CMD-1 switches to the 1st file. 
+CMD + 1 - if you have mutliple files open in the learn ide CMD-1 switches to the 1st file.
 
-CMD + 2 - to the second, and so on. 
+CMD + 2 - to the second, and so on.
 
-The last two work in all web browsers to switch to the different tabs you have open. 
+The last two work in all web browsers to switch to the different tabs you have open.
 There are some basic and intermediate shortcuts to help you in your work!

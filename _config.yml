@@ -2,7 +2,7 @@
 title: Coding Journeys with Eric
 header-img: jpg/home-bg.png
 email: eric@ericchrobak.com
-copyright_name: epunx2
+copyright_name: Eric Chrobak
 description: > # this means to ignore newlines until "baseurl:"
   Learning how to code!
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -14,7 +14,7 @@ email_username: eric@ericchrobak.com
 # Where things are
 source              : .
 destination         : ./_site
-collections_dir     : _posts
+collections_dir     : .
 plugins_dir         : _plugins
 layouts_dir         : _layouts
 data_dir            : _data
