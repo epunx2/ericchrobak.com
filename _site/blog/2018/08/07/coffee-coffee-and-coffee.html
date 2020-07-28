@@ -14,7 +14,7 @@
 
 		gtag('config', 'UA-146581885-1');
 	</script>
-	<title>About | Ruby on Rails Developer</title>
+	<title>COFFEE, Coffee, and coffee... | Ruby on Rails Developer</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Eric Chrobak">
 	<meta name="google-site-verification" content="mlSH_0PUjKe4Vjt1l5LJBdkVBq2rtdxkN0A2gV92NU4" />
@@ -81,66 +81,59 @@
 </nav>
 
 
-	<div class="jumbotron" id="home">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-5">
-                <img class="img-responsive img-circle center-block" src="jpg/icon.jpg" />
-            </div>
+	<div class="main">
+    <h1>COFFEE, Coffee, and coffee...</h1>
+    <p>07 Aug 2018 - Eric Chrobak</p>
 
-            <div class="col-sm-7">
-                <p id="large-content">Eric has had a fascination with computers and their inner workings since his early high school years when his mother first bought a Gateway 2000 that ran windows 95. After pursuing a few career paths he began his journey coding in 2015 with his first Codecademy online classes learning HTML, CSS, and JavaScript.<br /><br />In 2018 he did the online web development course at Flatiron School based in NYC. He is happily married with 2 children and resides near Chicago where the summers are hot and winters cold!<br /><br />He is interested in helping small businesses and entrepreneurs use software to solve problems they have.</p>
-                <p id="small-content">Eric has cultivated his passion for technology to help small business use technology to solve issues they face.<br /><br />He resides in the Chicago area with his wife and 2 kids!</p>
-            </div>
-        </div>
-    </div>
-</div>
+    <p>Coffe and coding seem to go together like peanut butter and jelly. When I hunker down to work on a project there is nothing like a nice cup of java to get me going!</p>
 
-<!-- Skills -->
-<div class="main">
-    <div class="container-fluid">
-        <div class="row">
-            <p id="eric">Eric is a web developer specializing in:</p>
-            <div class="col-xs-6">
-                <ul>
-                    <li>
-                        <p>HTML</p>
-                    </li>
-                    <li>
-                        <p>JavaScript</p>
-                    </li>
-                    <li>
-                        <p>Ruby</p>
-                    </li>
-                    <li>
-                        <p>Sinatra</p>
-                    </li>
-                    <li>
-                        <p>Jekyll</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-xs-6">
-                <ul>
-                    <li>
-                        <p>CSS</p>
-                    </li>
-                    <li>
-                        <p>jQuery</p>
-                    </li>
-                    <li>
-                        <p>Bootstrap</p>
-                    </li>
-                    <li>
-                        <p>SQLite</p>
-                    </li>
-                    <li>
-                        <p>Python</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<p>For the course work at Flatiron a recent project required me to pull data from websites through a method called scraping. It works just like it sounds, you are literally scraping data off of a website. Similar to scraping snow off of the car  you move the snow elsewhere. The difference with programming is the data stays on the website. But you do get the data to manipulate or use as you see fit.</p>
+
+<p>Then I was to provide an interface for the user via the command line requesting input. They would interact with the data. Classes would be created and instances of those classes based on the data that I scraped.</p>
+
+<p>My first attempt was to scrape from Yelp’s website and find local coffee shops. The first step was to create my command line interface(CLI). This would be what the user would interact with. There would be some text output in the terminal/bash/console/etc that would request input from the user, then based on that input the CLI would respond back with data or exit the program.</p>
+
+<p>The CLI was a ruby class that I created with methods to display a welcome, menu, and goodbye message. Inside of my menu I called another class that scraped the Yelp page. Then my scraper class parsed the data scraped and created instance of coffee shop classes based on the elements containing data returned by the scraper. Everything worked well except for the most important part: Yelp wouldn’t let me scrape their website.</p>
+
+<p><strong>Major lesson learned:</strong>
+Be sure to test along the way the parts you are adding are working. I built my scraper class and coffee shop class without testing if yelp would allow me to scrape their website. So, I had to undo everything and start from scratch.</p>
+
+<p>Then I tried another website with details on coffee. Their website was difficult to scrape and create new instances of the coffee class. So, I had to settle on Wikipedia’s page on coffee. From their I decided to scrape from some tables that had info on coffee roasts.</p>
+
+<p>I created coffee roasts classes based on the info provided including common names, temperature roasted, and other details about light, medium, and dark coffee roasts. After running some tests things looked to be working smoothly. The interface responded to the user’s input. From there I rearranged the interface text output and order somewhat to make it more visually appealling and make a simpler experience for the user.</p>
+
+<p>At this point the app scrapes the page well, creates the coffee roasts classes, responds to the user well, and meets the criteria for the project.</p>
+
+<p><strong>Features of the app:</strong></p>
+
+<ol>
+  <li>CLI class
+    <ul>
+      <li>Outputs welcome to user.</li>
+      <li>Receives input.</li>
+      <li>Calls Scraper class</li>
+      <li>Retrives Coffee Roast instances from Coffee Roast class</li>
+      <li>Accesses the input with a case statement, responds based on input with data, a list of options, or says good bye and closes.</li>
+    </ul>
+  </li>
+  <li>Scraper Class
+    <ul>
+      <li>Scrapes the wikipedia page</li>
+      <li>Parses the elements returned to retrieve data</li>
+      <li>Creates Coffee roast instances with the retrieved data</li>
+    </ul>
+  </li>
+  <li>Coffee Roast Class
+    <ul>
+      <li>Sets attr assesor for the key:values for the Roasts</li>
+      <li>Adds the instances to a class variable</li>
+      <li>Provides a method to return all instances of class</li>
+    </ul>
+  </li>
+</ol>
+
+<p>The project seemed like climbing a mountain at first but, after breaking it down to parts it didn’t end up being as difficult as it originally seemed. It was much easier than I thought and I feel much more confident in programming abilities and Ruby in general after this.</p>
+
 </div>
 
 

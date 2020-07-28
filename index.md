@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Eric Chrobak! | Ruby on Rails Developer
+title: Eric Chrobak!
 ---
 
 <!-- Project Showcase -->
@@ -41,6 +41,7 @@ title: Eric Chrobak! | Ruby on Rails Developer
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <div class="glyphicon glyphicon-menu-down btn-lg"></div>
     </div>
 </div>
 <!-- End Showcase -->

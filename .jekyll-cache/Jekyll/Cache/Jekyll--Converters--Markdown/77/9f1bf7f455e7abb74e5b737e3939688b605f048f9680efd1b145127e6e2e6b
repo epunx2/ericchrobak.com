@@ -1,0 +1,58 @@
+I"�<div class="jumbotron">
+    <div class="container">
+        <h1 class="blog-title">Blog</h1>
+
+        <ul class="blog">
+          
+            <li class="article">
+              <h2><a href="/blog/2018/09/27/Sinatra-and-MVC.html">Sinatra and MVC</a></h2>
+              <p><p>Developing an app involves a level of complexity that would make using a single file for all the code completely useless. This is due the difficulity of debugging a large file and make changes when necessary. In addition such a file would be difficult to read.</p>
+</p>
+              <p class="post-meta">Posted by <a href="/about.html">Eric Chrobak</a> on September 27, 2018</p>
+            </li>
+            <hr />
+          
+            <li class="article">
+              <h2><a href="/blog/2018/08/07/coffee-coffee-and-coffee.html">COFFEE, Coffee, and coffee...</a></h2>
+              <p><p>Coffe and coding seem to go together like peanut butter and jelly. When I hunker down to work on a project there is nothing like a nice cup of java to get me going!</p>
+</p>
+              <p class="post-meta">Posted by <a href="/about.html">Eric Chrobak</a> on August 7, 2018</p>
+            </li>
+            <hr />
+          
+            <li class="article">
+              <h2><a href="/blog/2018/08/03/learn-ide-and-general-keyboard-shorcuts.html">LEARN IDE &amp; General Keyboard Shorcuts</a></h2>
+              <p><p>I love that coding and programming involves shortcuts to increase productivity.</p>
+</p>
+              <p class="post-meta">Posted by <a href="/about.html">Eric Chrobak</a> on August 3, 2018</p>
+            </li>
+            <hr />
+          
+            <li class="article">
+              <h2><a href="/blog/2018/06/19/too-many-relationships-avoid-infinite-loops-when-relating-objects.html">Too Many Relationships!? Avoid Infinite Loops When Relating Objects</a></h2>
+              <p><p>Do you have too many relationships? Does your app have to many relationships? Actually what I’m wondering is do you get stuck in a loop with bad relationship(s)? Well I’m sure we’ve all been there where you just cant seem to break out of a bad loop when relating classes to one another(not unlike dating relationships!)I like how coding relates to real life.</p>
+</p>
+              <p class="post-meta">Posted by <a href="/about.html">Eric Chrobak</a> on June 19, 2018</p>
+            </li>
+            <hr />
+          
+            <li class="article">
+              <h2><a href="/blog/2018/05/08/oo-tic-tac-toe-and-word-to-the-wise-follow-the-directions.html">OO TIC TAC TOE and Word to the wise&amp;#58 Follow the Directions!</a></h2>
+              <p><p>Solving problems with programming is an open ended adventure. There are multiple ways to solve a problem, present an idea, or make something. My most frustrating experience thus far in coding was a project I had for an online coding program I’m doing with Flatiron School. My goal was to build an Object Oriented TIC TAC TOE game in the command line. I had already built one but there was a difference in what they wanted me to do.</p>
+</p>
+              <p class="post-meta">Posted by <a href="/about.html">Eric Chrobak</a> on May 8, 2018</p>
+            </li>
+            <hr />
+          
+            <li class="article">
+              <h2><a href="/blog/2018/04/11/a-reason-to-code.html">A Reason to Code</a></h2>
+              <p><h3 id="computer-programmingcoding-started-out-as-the-domain-of-geeks-nerds-and-hackers-from-the-50s-up-until-the-last-10-15-years-around-the-time-of-the-dotcom-burst-of-the-the-late-90s-many-more-people-started-pursuing-careers-in-programmingcoding-what-was-once-a-job-behind-a-honking-monitor-with-slacks-tie-and-pens-in-the-front-pocket-has-become-a-hip-job-associated-with-people-riding-their-bike-through-the-offices-at-google-working-remotely-from-home-and-people-at-starbucks-coffee-shops-sipping-on-macchiatos-and-lattes-with--macbook-pros-pecking-away-at-the-keyboard">Computer programming/coding started out as the domain of “geeks”, “nerds”, and “hackers” from the 50’s up until the last 10-15 years. Around the time of the dotcom burst of the the late 90’s many more people started pursuing careers in programming(coding). What was once a job behind a honking monitor with slacks, tie, and pens in the front pocket has become a hip job associated with people riding their bike through the offices at google, working remotely from home, and people at starbuck’s coffee shops sipping on macchiato’s and latte’s with  macbook pro’s pecking away at the keyboard.</h3>
+</p>
+              <p class="post-meta">Posted by <a href="/about.html">Eric Chrobak</a> on April 11, 2018</p>
+            </li>
+            <hr />
+          
+        </ul>
+    </div>
+</div>
+:ET

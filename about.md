@@ -3,11 +3,11 @@ layout: default
 title: About
 ---
 
-<div class="main" id="about">
+<div class="jumbotron" id="home">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-5">
-                <img class="img-responsive img-circle center-block" src="jpg/profile_image.png">
+                <img class="img-responsive img-circle center-block" src="jpg/icon.jpg">
             </div>
 
             <div class="col-sm-7">

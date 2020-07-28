@@ -1,29 +1,26 @@
 # Site settings
-title: Coding Journeys with Eric
-header-img: jpg/home-bg.png
-email: eric@ericchrobak.com
-copyright_name: Eric Chrobak
+title               : Ruby on Rails Developer
+header-img          : jpg/home-bg.png
+email               : eric@ericchrobak.com
+copyright_name      : Eric Chrobak
 description: > # this means to ignore newlines until "baseurl:"
   Learning how to code!
-baseurl: "" # the subpath of your site, e.g. /blog
-twitter_username:
-github_username:  epunx2
-learn_profile: epunx2
-email_username: eric@ericchrobak.com
+baseurl             : "" # the subpath of your site, e.g. /blog
+twitter_username    :
+github_username     : epunx2
+learn_profile       : epunx2
+email_username      : eric@ericchrobak.com
 
 # Where things are
 source              : .
 destination         : ./_site
-collections_dir     : .
+# collections_dir     : .
 plugins_dir         : _plugins
 layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
 sass:
-  sass_dir: _sass
-collections:
-  posts:
-    output          : true
+  sass_dir          : _sass
 
 # Handling Reading
 safe                : false
@@ -42,7 +39,7 @@ unpublished         : false
 
 # Plugins
 whitelist           : []
-plugins             : []
+plugins             : [jekyll-paginate]
 
 # Conversion
 markdown            : kramdown
@@ -59,18 +56,19 @@ baseurl             : "" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
-permalink           : date
+permalink           : /blog/:year/:month/:day/:title:output_ext
 paginate_path       : /page:num
-timezone            : null
+paginate            : 5
+timezone            : America/Chicago
 
 quiet               : false
 verbose             : false
 defaults            : []
 
-liquid:
-  error_mode        : warn
-  strict_filters    : false
-  strict_variables  : false
+# liquid:
+error_mode          : warn
+strict_filters      : false
+strict_variables    : false
 
 # Markdown Processors
 rdiscount:

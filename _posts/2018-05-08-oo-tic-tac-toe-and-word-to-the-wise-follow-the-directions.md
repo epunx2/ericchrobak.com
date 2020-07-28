@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OO TIC TAC TOE and Word to the wise: Follow the Directions!
+title: OO TIC TAC TOE and Word to the wise&#58 Follow the Directions!
 date: 2018-05-08 18:55:19 -0400
 author: Eric Chrobak
 ---

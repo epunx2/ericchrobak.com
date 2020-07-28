@@ -36,6 +36,10 @@ div {
 	width: 100%;
 }
 
+.row {
+	margin: auto;
+}
+
 /* Navbar */
 nav {
 	background-color: #FDFFFC; /* White */
@@ -97,15 +101,31 @@ nav #name {
 	background: transparent;
 	text-align: center;
 	height: 100%;
+	overflow: auto;
 }
+
 
 .intro {
 	margin: 35% auto;
 	text-align: center;
 }
 
+.blog-title{
+	margin: 10% auto;
+}
+
 .jumbotron h1 {
 	font-size: 3em;
+}
+
+.jumbotron .blog {
+	list-style: none;
+	text-align: left;
+	padding: 3%;
+}
+
+.jumbotron .blog .article {
+	margin: 10% auto;
 }
 
 .carousel-inner a img {
@@ -117,7 +137,10 @@ nav #name {
 #carousel-example-generic {
 	margin: 0 auto;
 	width: 90%;
-	height: 50%;
+}
+
+.glyphicon {
+	margin: 20% auto 0;
 }
 
 /* Portfolio */
@@ -126,11 +149,6 @@ nav #name {
 	height: auto;
 	min-height: 100%;
 	margin-top: 10%;
-}
-
-.supporting .row {
-	margin-left: 0;
-	margin-right: 0;
 }
 
 .clearfix:after {
@@ -216,11 +234,7 @@ nav #name {
 /*Main*/
 
 .main {
-	margin: 15% auto;
-}
-
-.main .row {
-	margin: auto;
+	margin: 7.5% auto;
 }
 
 .row div {
