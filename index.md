@@ -4,7 +4,7 @@ title: Eric Chrobak!
 ---
 
 <!-- Project Showcase -->
-<div class="jumbotron" id="home">
+<div class="jumbotron">
     <div class="container">
         <h1 class="intro">Web Development Solutions for Business</h1>
         <!--Slideshow-->
@@ -41,13 +41,13 @@ title: Eric Chrobak!
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="glyphicon glyphicon-menu-down btn-lg"></div>
+        <!-- <div class="glyphicon glyphicon-menu-down btn-lg scroll-down"></div> -->
     </div>
 </div>
 <!-- End Showcase -->
 
 <!-- Supporting Section -->
-<div class="supporting clearfix" id="work">
+<div class="supporting clearfix">
     <div class="container">
         <ul class="nav nav-pills" id="supporting-nav">
             <li class="nav-all active"><a href="#work">All</a></li>

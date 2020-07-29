@@ -5,7 +5,6 @@ date: 2018-08-03 20:58:16 -0400
 author: Eric Chrobak
 ---
 
-
 I love that coding and programming involves shortcuts to increase productivity.
 
 One of my favorite shortcuts while working on a computer is keyboard shorctus!

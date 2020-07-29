@@ -5,8 +5,7 @@ date: 2018-08-07 05:57:26 +0000
 author: Eric Chrobak
 ---
 
-
-Coffe and coding seem to go together like peanut butter and jelly. When I hunker down to work on a project there is nothing like a nice cup of java to get me going!
+Coffee and coding seem to go together like peanut butter and jelly. When I hunker down to work on a project there is nothing like a nice cup of java to get me going!
 
 For the course work at Flatiron a recent project required me to pull data from websites through a method called scraping. It works just like it sounds, you are literally scraping data off of a website. Similar to scraping snow off of the car  you move the snow elsewhere. The difference with programming is the data stays on the website. But you do get the data to manipulate or use as you see fit.
 

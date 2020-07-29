@@ -5,7 +5,6 @@ date: 2018-05-08 18:55:19 -0400
 author: Eric Chrobak
 ---
 
-
 Solving problems with programming is an open ended adventure. There are multiple ways to solve a problem, present an idea, or make something. My most frustrating experience thus far in coding was a project I had for an online coding program I'm doing with Flatiron School. My goal was to build an Object Oriented TIC TAC TOE game in the command line. I had already built one but there was a difference in what they wanted me to do.
 
 The first time I had to build one procedurally. When you code procedurally, your data and instructions are separate. When you write instructions, you have to "import" or pass your data into the method(where the instructions are located). You have to assign that data a variable in each method. For TIC TAC TOE you have an object for your board.  That data is passed into  every method. In each method when I make a call to the board for instance I have to assign a variable name to it. I had 13 methods which meant I had 13 variables in the program called board. It got confusing in my mind which board I was referring, what the status of the board was, and what the name of the board was if I didn't assign it the same variable name in each method.

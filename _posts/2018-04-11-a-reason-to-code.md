@@ -5,7 +5,7 @@ date: 2018-04-11 20:35:43 -0400
 author: Eric Chrobak
 ---
 
-### Computer programming/coding started out as the domain of "geeks", "nerds", and "hackers" from the 50's up until the last 10-15 years. Around the time of the dotcom burst of the the late 90's many more people started pursuing careers in programming(coding). What was once a job behind a honking monitor with slacks, tie, and pens in the front pocket has become a hip job associated with people riding their bike through the offices at google, working remotely from home, and people at starbuck's coffee shops sipping on macchiato's and latte's with  macbook pro's pecking away at the keyboard.
+Computer programming/coding started out as the domain of "geeks", "nerds", and "hackers" from the 50's up until the last 10-15 years. Around the time of the dotcom burst of the the late 90's many more people started pursuing careers in programming(coding). What was once a job behind a honking monitor with slacks, tie, and pens in the front pocket has become a hip job associated with people riding their bike through the offices at google, working remotely from home, and people at starbuck's coffee shops sipping on macchiato's and latte's with  macbook pro's pecking away at the keyboard.
 
 My journey to coding started back in the mid to late 90's. My mother was a single mom raising my sisters and I while trying to start her own business. She purchased a Gateway 2000 desktop computer to run her business. I helped her doing the computer work and entertained myself playing starcraft. I learned the in's and out's of the window's 95 operating system including working in msdos and removing a few viruses(without antivirus software) that infected the computer. I spent the whole weekend on that one!!
 

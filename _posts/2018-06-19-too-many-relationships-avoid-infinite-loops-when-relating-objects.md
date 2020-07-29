@@ -5,7 +5,6 @@ date: 2018-06-19 19:38:42 +0000
 author: Eric Chrobak
 ---
 
-
 Do you have too many relationships? Does your app have to many relationships? Actually what I'm wondering is do you get stuck in a loop with bad relationship(s)? Well I'm sure we've all been there where you just cant seem to break out of a bad loop when relating classes to one another(not unlike dating relationships!)I like how coding relates to real life.
 
 Recently while doing a project for the has many relationships I found myself continually getting stuck in loops when relating one object to another. I had an issue in the OO Tic Tac Toe project where I was stuck in an infinite loop and I didn't resolve it but, moved on to a later test in the project. After several hours of debugging I asked a question on the ask a question forum. A tech coach suggested that I fix the loop first. After doing that it was much easier to debug the rest of my code.

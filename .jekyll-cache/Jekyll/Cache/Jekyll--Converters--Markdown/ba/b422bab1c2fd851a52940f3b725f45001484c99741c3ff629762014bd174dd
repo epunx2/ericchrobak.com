@@ -1,0 +1,6 @@
+I"ñ<p>Developing an app involves a level of complexity that would make using a single file for all the code completely useless. This is due the difficulity of debugging a large file and make changes when necessary. In addition such a file would be difficult to read.
+<br />
+This is were frameworks come in such as Sinatra. They allow for code that readable, easy to debug, and is separated by function.
+<br />
+Sinatra is a ruby gem used to build lightweight web applications using ruby and rack.</p>
+:ET
