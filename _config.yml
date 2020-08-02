@@ -59,8 +59,8 @@ gist:
 
 # Outputting
 permalink           : /blog/:year/:month/:day/:title:output_ext
-paginate_path       : /page:num
-paginate            : 5
+# paginate_path       : /page:num
+# paginate            : 5
 timezone            : America/Chicago
 
 quiet               : false
