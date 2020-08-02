@@ -54,6 +54,11 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
+hostname            : "github.com"
+pages_hostname      : "github.io"
+repository_url      : "https://github.com/github/ericchrobak.com",
+repository_nwo      : "github/ericchrobak.com",
+repository_name     : "ericchrobak.com",
 url                 : "https://epunx2.github.io/ericchrobak.com/"
 baseurl             : "/ericchrobak.com" # does not include hostname
 show_dir_listing    : false
