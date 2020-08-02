@@ -23,7 +23,7 @@ sass:
   sass_dir          : _sass
 
 # Handling Reading
-safe                : false
+safe                : true
 include             : [".htaccess"]
 exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
 keep_files          : [".git", ".svn"]
@@ -54,6 +54,8 @@ port                : 4000
 host                : 127.0.0.1
 baseurl             : "" # does not include hostname
 show_dir_listing    : false
+gist:
+  noscript          : false
 
 # Outputting
 permalink           : /blog/:year/:month/:day/:title:output_ext
@@ -86,3 +88,5 @@ kramdown:
   hard_wrap         : false
   footnote_nr       : 1
   show_warnings     : false
+  math_engine       : mathjax
+  syntax_highlighter: rouge
