@@ -12,7 +12,7 @@ learn_profile       : epunx2
 email_username      : eric@ericchrobak.com
 
 # Where things are
-source              : ./ericchrobak.com/
+source              : .
 destination         : ./_site
 # collections_dir     : .
 plugins_dir         : _plugins
@@ -52,7 +52,7 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
-baseurl             : "" # does not include hostname
+baseurl             : "/ericchrobak.com" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
