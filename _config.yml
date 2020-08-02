@@ -39,7 +39,9 @@ unpublished         : false
 
 # Plugins
 whitelist           : []
-plugins             : [jekyll-paginate]
+plugins             :
+    - "jekyll-github-metadata"
+    - "ekyll-sitemap"
 
 # Conversion
 markdown            : kramdown
@@ -54,6 +56,9 @@ port                : 4000
 host                : 127.0.0.1
 baseurl             : "" # does not include hostname
 show_dir_listing    : false
+github:
+  source:
+    branch: foo
 gist:
   noscript          : false
 
