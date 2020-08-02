@@ -70,7 +70,7 @@ title: Eric Chrobak!
 
             <div class="col-md-4">
                 <a href="#work" data-toggle="modal" data-target="#myModal4" class="html thumbnail"><img class="img-responsive img-rounded" src="jpg/websites/move-gear.png"></a>
-                <a href="#work" data-toggle="modal" data-target="#myModal5" class="html thumbnail"><img class="img-responsive img-rounded" alt="Website built for Codecademy course." src="jpg/websites/job-hunter-app.png"></a>
+                <a href="#work" data-toggle="modal" data-target="#myModal5" class="html thumbnail"><img class="img-responsive img-rounded" alt="Website built for Codecademy course." src="jpg/websites/move.png"></a>
                 <a href="#work" data-toggle="modal" data-target="#myModal6" class="html thumbnail"><img class="img-responsive img-rounded" src="jpg/websites/adoptly.png"></a>
             </div>
 

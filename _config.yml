@@ -12,7 +12,7 @@ learn_profile       : epunx2
 email_username      : eric@ericchrobak.com
 
 # Where things are
-source              : .
+source              : ./ericchrobak.com
 destination         : ./_site
 # collections_dir     : .
 plugins_dir         : _plugins

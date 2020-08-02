@@ -178,6 +178,10 @@ Pink: #E5C2C0
     	font-size: 1.25em;
     }
 
+    .row .modal-dialog {
+        margin: 30px auto;
+    }
+
     .main p {
         font-size: 1.5em;
     }
@@ -259,6 +263,20 @@ Pink: #E5C2C0
 @media only screen and (min-width: 459px) {
     .jumbotron .blog .article, .jumbotron .blog-title {
     	margin: 5%;
+    }
+
+    /* Modals */
+    .supporting .modal-lg .modal-title {
+        font-size: 2em;
+    }
+
+    .supporting .modal-lg .modal-footer p, .supporting .modal-lg .modal-footer .btn {
+        font-size: 1.5em;
+    }
+
+    .supporting .modal-lg .modal-footer .btn {
+        padding: 10px 15px;
+        border-radius: 5px;
     }
 }
 

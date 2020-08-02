@@ -16,13 +16,13 @@
 - modal-id: myModal4
   name: Move Gear
   image-url: jpg/websites/move-gear.png
-  description: An interactive Lite Brite app. HTML, JavaScript, jQuery, and CSS. Features click listeners, class toggles when a dot is selected or a color, and setInterval for the blink.
-  url: work/websites/Lite-Brite/index.html
+  description: Project for Codecademy. HTML, CSS, JavaScript, jQuery. Features dropdown toggle, accordion on dropdown, and validation on login for valid email.
+  url: work/websites/Move-Gear/index.html
 - modal-id: myModal5
-  name: Innovation Cloud
-  image-url: jpg/websites/innovation-cloud.png
-  description: HTML & CSS project for Codecademy.
-  url: work/websites/Innovation-Cloud/index.html
+  name: Move
+  image-url: jpg/websites/move.png
+  description: HTML, CSS, JavaScript, and jQuery project for Codecademy. Uses jQuery Autocomplete function.
+  url: work/websites/Move/index.html
 - modal-id: myModal6
   name: Adoptly
   image-url: jpg/websites/adoptly.png
