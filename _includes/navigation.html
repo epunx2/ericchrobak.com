@@ -17,11 +17,11 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll active" href="{{ relative_url }}/">Home</a>
+                    <a class="page-scroll active" href="{{ absolute_url }}/">Home</a>
                 </li>
                 {% for item in site.data.navigation %}
                 <li>
-                    <a class="page-scroll" href="{{ item.link | prepend: relative_url }}">{{ item.name }}</a>
+                    <a class="page-scroll" href="{{ item.link | prepend: absolute_url }}">{{ item.name }}</a>
                 </li>
                 {% endfor %}
 
