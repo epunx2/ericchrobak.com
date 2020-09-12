@@ -6,7 +6,7 @@ copyright_name      : Eric Chrobak
 description: > # this means to ignore newlines until "baseurl:"
   Learning how to code!
 baseurl             : "/ericchrobak.com" # the subpath of your site, e.g. /blog
-url                 : "https://epunx2.github.io/ericchrobak.com/"
+url                 : "https://epunx2.github.io/"
 twitter_username    :
 github_username     : epunx2
 learn_profile       : epunx2
