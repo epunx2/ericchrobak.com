@@ -21,7 +21,7 @@
                 </li>
                 {% for item in site.data.navigation %}
                 <li>
-                    <a class="page-scroll" href="{{ item.link | prepend: absolute_url }}">{{ item.name }}</a>
+                    <a class="page-scroll" href="{{ item.link | absolute_url }}">{{ item.name }}</a>
                 </li>
                 {% endfor %}
 
