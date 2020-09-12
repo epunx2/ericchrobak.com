@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll active" href="{{ site.url + "/" + site.baseurl }}">Home</a>
+                    <a class="page-scroll active" href="{{ site.baseurl | site.url }}">Home</a>
                 </li>
                 {% for item in site.data.navigation %}
                 <li>
