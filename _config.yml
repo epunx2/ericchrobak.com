@@ -5,7 +5,8 @@ email               : eric@ericchrobak.com
 copyright_name      : Eric Chrobak
 description: > # this means to ignore newlines until "baseurl:"
   Learning how to code!
-baseurl             : "" # the subpath of your site, e.g. /blog
+baseurl             : "/ericchrobak.com" # the subpath of your site, e.g. /blog
+url                 : "https://127.0.0.1/ericchrobak.com"
 twitter_username    :
 github_username     : epunx2
 learn_profile       : epunx2
@@ -14,7 +15,6 @@ email_username      : eric@ericchrobak.com
 # Where things are
 source              : .
 destination         : ./_site
-# collections_dir     : .
 plugins_dir         : _plugins
 layouts_dir         : _layouts
 data_dir            : _data
@@ -56,19 +56,15 @@ port                : 4000
 host                : 127.0.0.1
 hostname            : "github.com"
 pages_hostname      : "github.io"
-repository_url      : "https://github.com/github/ericchrobak.com",
-repository_nwo      : "github/ericchrobak.com",
-repository_name     : "ericchrobak.com",
-url                 : "https://epunx2.github.io/ericchrobak.com/"
-baseurl             : "/ericchrobak.com" # does not include hostname
+repository_url      : "https://github.com/epunx2/ericchrobak.com"
+repository_nwo      : "epunx2/ericchrobak.com"
+repository_name     : "ericchrobak.com"
 show_dir_listing    : false
 gist:
   noscript          : false
 
 # Outputting
 permalink           : /blog/:year/:month/:day/:title:output_ext
-# paginate_path       : /page:num
-# paginate            : 5
 timezone            : America/Chicago
 
 quiet               : false
