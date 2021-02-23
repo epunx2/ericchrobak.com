@@ -32,6 +32,10 @@ div {
 	max-width: 100%;
 }
 
+div, .jumbotron, .container {
+	overflow: hidden;
+}
+
 .container, .container-fluid, .row {
 	width: 100%;
 
