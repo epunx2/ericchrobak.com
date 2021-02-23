@@ -137,6 +137,10 @@ nav #name {
 	padding: 3%;
 }
 
+.jumbotron .blog li {
+	list-style: none;
+}
+
 .jumbotron .blog .article {
 	margin: 10% auto;
 }
