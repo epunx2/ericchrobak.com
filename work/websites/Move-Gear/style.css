@@ -40,8 +40,8 @@ body {
   cursor: pointer;
 }
 
-.header .col-md-3, .header .pull-right { 
-  width: 50%; float: left; 
+.header .col-md-3, .header .pull-right {
+  width: 50%; float: left;
 }
 
 .header .dropdown-menu {
@@ -52,7 +52,7 @@ body {
   width: 290px;
   border-radius: 0;
   padding: 10px;
-  font-family: Helvetica, Arial, sans-serif; 
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .header .dropdown-menu h3 {
@@ -60,7 +60,7 @@ body {
   font-size: 20px;
   margin: 0 0 10px 0;
   text-transform: uppercase;
-  
+
 }
 
 .header .dropdown-menu button {
@@ -70,7 +70,7 @@ body {
 
 /* Main */
 .main {
-  background: url(https://s3.amazonaws.com/codecademy-content/projects/2/move-gear/bg.jpg) no-repeat center center; 
+  background: url('https://s3.amazonaws.com/codecademy-content/projects/2/move-gear/bg.jpg') no-repeat center center; 
   background-size: cover;
   height: 600px;
 }
@@ -131,7 +131,7 @@ body {
 }
 
 .feature {
-  background: url('https://s3.amazonaws.com/codecademy-content/projects/2/move-gear/01.jpg') no-repeat center center; 
+  background: url('https://s3.amazonaws.com/codecademy-content/projects/2/move-gear/01.jpg') no-repeat center center;
   background-size: cover;
   height: 400px;
   width: 100%;
