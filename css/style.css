@@ -114,7 +114,7 @@ nav #name {
 	background: transparent;
 	text-align: center;
 	height: 100%;
-	overflow: auto;
+	overflow: hidden;
 }
 
 
@@ -135,10 +135,6 @@ nav #name {
 	list-style: none;
 	text-align: left;
 	padding: 3%;
-}
-
-.jumbotron .blog .article {
-	list-style: none;
 }
 
 .jumbotron .blog .article {

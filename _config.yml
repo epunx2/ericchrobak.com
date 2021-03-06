@@ -1,7 +1,7 @@
 # Site settings
-title               : Ruby on Rails Developer
+title               : Software Engineer
 header-img          : jpg/home-bg.png
-email               : eric@ericchrobak.com
+email               : eric.chrobak@gmail.com
 copyright_name      : Eric Chrobak
 description: > # this means to ignore newlines until "baseurl:"
   Learning how to code!
@@ -10,7 +10,7 @@ url                 : "https://www.ericchrobak.com"
 twitter_username    :
 github_username     : epunx2
 learn_profile       : epunx2
-email_username      : eric@ericchrobak.com
+email_username      : eric.chrobak@gmail.com
 
 # Where things are
 source              : .
