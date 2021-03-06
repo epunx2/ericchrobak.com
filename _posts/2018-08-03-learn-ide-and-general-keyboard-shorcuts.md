@@ -7,8 +7,7 @@ author: Eric Chrobak
 
 I love that coding and programming involves shortcuts to increase productivity.
 
-One of my favorite shortcuts while working on a computer is keyboard shorctus!
-
+One of my favorite shortcuts while working on a computer is keyboard shortcuts!
 
 I will provide some common ones and then those more specific to Learn IDE.
 
@@ -27,7 +26,7 @@ CMD + C - Copy - copies the highlighted text, picture, folder, etc.
 
 CMD + X - Cut - cuts the highlighted text, picture, folder, etc. The difference between this copy command is when you cut the highlighted item is removed until you paste it in the new location.
 
-CMD + V - Paste - pastes what you either copies or cut onto the location your cursur is or in the folder you are in.
+CMD + V - Paste - pastes what you either copies or cut onto the location your cursor is or in the folder you are in.
 
 CMD + B - Bold - changes cursor  and/or highlighted text to bold.
 
@@ -44,9 +43,9 @@ CMD + i - toggle the console on or off.
 
 CMD + \ - will toggle the file tree on the left side.
 
-CMD + / - will comment out the line your cursor is on and if you have mutliple lines hightlighted then CMD-/ will comment out all the lines you have highlighted.
+CMD + / - will comment out the line your cursor is on and if you have multiple lines highlighted then CMD-/ will comment out all the lines you have highlighted.
 
-CMD + 1 - if you have mutliple files open in the learn ide CMD-1 switches to the 1st file.
+CMD + 1 - if you have multiple files open in the Learn IDE CMD-1 switches to the 1st file.
 
 CMD + 2 - to the second, and so on.
 

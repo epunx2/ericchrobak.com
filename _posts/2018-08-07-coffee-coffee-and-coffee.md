@@ -13,7 +13,7 @@ Then I was to provide an interface for the user via the command line requesting 
 
 My first attempt was to scrape from Yelp's website and find local coffee shops. The first step was to create my command line interface(CLI). This would be what the user would interact with. There would be some text output in the terminal/bash/console/etc that would request input from the user, then based on that input the CLI would respond back with data or exit the program.
 
-The CLI was a ruby class that I created with methods to display a welcome, menu, and goodbye message. Inside of my menu I called another class that scraped the Yelp page. Then my scraper class parsed the data scraped and created instance of coffee shop classes based on the elements containing data returned by the scraper. Everything worked well except for the most important part: Yelp wouldn't let me scrape their website.
+The CLI was a Ruby class that I created with methods to display a welcome, menu, and goodbye message. Inside of my menu I called another class that scraped the Yelp page. Then my scraper class parsed the data scraped and created instance of coffee shop classes based on the elements containing data returned by the scraper. Everything worked well except for the most important part: Yelp wouldn't let me scrape their website.
 
 **Major lesson learned:**
 Be sure to test along the way the parts you are adding are working. I built my scraper class and coffee shop class without testing if yelp would allow me to scrape their website. So, I had to undo everything and start from scratch.
