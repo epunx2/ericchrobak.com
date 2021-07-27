@@ -8,6 +8,7 @@ gem "jekyll"
 gem "bundler-stats", :git => "https://github.com/jmmastey/bundler-stats.git", :branch => "master"
 gem "thor"
 gem "github-pages"
+gem "kramdown", ">= 2.3.1"
 group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-github-metadata"
