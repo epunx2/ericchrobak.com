@@ -327,7 +327,7 @@ nav #name {
 	text-align: center;
 }
 
-.main p {
+.main p, .main ul li, .main ol li {
 	font-size: 2em;
 }
 

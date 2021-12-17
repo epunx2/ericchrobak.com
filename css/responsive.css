@@ -182,8 +182,9 @@ Pink: #E5C2C0
         margin: 30px auto;
     }
 
-    .main p {
+    .main p, .main ul li, .main ol li {
         font-size: 1.5em;
+        line-height: 2em;
     }
 
     .blog .article h2 {
