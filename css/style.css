@@ -20,9 +20,9 @@ html, body {
 }
 
 body {
-	background: -moz-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../jpg/Cold-Chicago.jpg) no-repeat center center fixed;
-	background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../jpg/Cold-Chicago.jpg") center center fixed no-repeat;
-	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../jpg/Cold-Chicago.jpg) no-repeat center center fixed;
+	background: -moz-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../jpg/Cold-Chicago.jpg") no-repeat center center fixed;
+	background: -webkit-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../jpg/Cold-Chicago.jpg") center center fixed no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../jpg/Cold-Chicago.jpg") no-repeat center center fixed;
 	background-size: cover;
 	color: #FDFFFC; /* White */
 	min-height: 100%;

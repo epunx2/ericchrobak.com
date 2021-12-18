@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Eric Chrobak!
+title: Software Engineer
 ---
 
 <!-- Project Showcase -->

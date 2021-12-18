@@ -3,7 +3,7 @@ layout: default
 title: Coding With Eric
 ---
 
-<div class="jumbotron">
+<div class="jumbotron" id="blog-jumbo">
     <div class="container">
         <h1 class="blog-title">Coding With Eric</h1>
 
