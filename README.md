@@ -22,16 +22,15 @@ This site uses different languages, frameworks, Libraries and tools to run.
   - [Liquid](https://github.com/Shopify/liquid/wiki) - Template engine built by Shopify
 
 ## Features
-What makes your project stand out?
+- Page Templates
+- Custom use of CSS and custom stylesheet
+- Modulized the Modal windows
 
 ## Code Example
 Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
 ## How to use?
 This repo is for reference to see the code the site was built on. -->
-
-<!-- ## Contribute
-Bug reports and pull requests are welcome on GitHub at https://github.com/epunx2/coffee-cli-app. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant [code of conduct](https://github.com/epunx2/coffee-cli-app/coffee-cli-app/CODE_OF_CONDUCT.md). -->
 
 ## Credits
 This site was initially a static html page. The page was initially inspired from a project I had to do for [Codecademy](https://www.codecademy.com). From there I had done some work for an online course for Flatiron School. I had to create a blog that was on GitHub pages. That inspired me to migrate my website to GitHub Pages. This site is built using [Jekyll](https://jekyllrb.com)
