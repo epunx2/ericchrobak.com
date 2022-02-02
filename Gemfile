@@ -13,3 +13,4 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-github-metadata"
 end
+gem "github-linguist"
