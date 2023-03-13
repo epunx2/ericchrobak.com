@@ -4,9 +4,7 @@ title: I Built A Basic Rails App
 date: 2021-12-16 22:20:00 -0500
 author: Eric Chrobak
 ---
-
 <br>
-
 I've been developing for quite some time and had put my Ruby learning to the side but, it felt like to due time to get back in the saddle. So I started with the official [Ruby on Rails getting started with Rails Guide](https://guides.rubyonrails.org/getting_started.html). I am going to talk about the steps necessary to build that first app, the structure of a Rails app, what the MVC architecting pattern is, and what I plan to do next with the app.
 <br>
 

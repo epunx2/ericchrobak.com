@@ -4,9 +4,7 @@ title: What Can You Do With Ruby?
 date: 2022-01-31 22:00:00 -0500
 author: Eric Chrobak
 ---
-
 <br>
-
 Have you ever asked yourself questions like:
 <br>
 

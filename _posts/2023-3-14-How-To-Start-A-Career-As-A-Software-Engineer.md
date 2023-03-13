@@ -4,9 +4,7 @@ title: How to start a career as a software engineer?
 date: 2023-02-14 22:00:00 -0500
 author: Eric Chrobak
 ---
-
 <br>
-
 This post could also be called "Learn How to Code"
 <br>
 
