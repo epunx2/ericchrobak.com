@@ -4,10 +4,10 @@
   description: An interactive Lite Brite app. HTML, JavaScript, jQuery, and CSS. Features click listeners, class toggles when a dot is selected or a color, and setInterval for the blink.
   url: work/websites/Lite-Brite/index.html
 - modal-id: myModal2
-  name: Threadly
+  name: HCA Career Fair AI bot
   image-url: jpg/websites/threadly.png
-  description: jQuery project for Codecademy. Thread for messages.Uses submit to prepend comment to HTML as a li element.
-  url: work/websites/Threadly/index.html
+  description: jQuery AI bot for HCA career fair. Asks students questions about their interest in software engineering. Uses submit to prepend comment to HTML as a li element. Logic uses a series of case statements to provide responses back.
+  url: work/websites/HCA-career-bot/index.html
 - modal-id: myModal3
   name: Pocketbook
   image-url: jpg/websites/pocket-book.png

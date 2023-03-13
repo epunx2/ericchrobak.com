@@ -19,7 +19,7 @@ title: Software Engineer
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <a href="work/websites/Threadly/index.html"><img alt="jQuery project. Thread for messages. Uses submit to prepend comment to HTML as a li element." src="jpg/websites/threadly.png"></a>
+                    <a href="work/websites/HCA-career-bot/index.html"><img alt="jQuery project. AI bot for HCA career fair. Asks students questions about their interest in software engineering. Uses submit to prepend comment to HTML as a li element. Logic uses a series of case statements to provide responses back." src="jpg/websites/HCA-career-fair-bot.png"></a>
                 </div>
                 <div class="item">
                     <a href="work/websites/Armando-Perez/index.html"><img data-src="jpg/websites/armando-perez.png" data-srcset="jpg/websites/armando-perez.png" class="lazy"
@@ -64,7 +64,7 @@ title: Software Engineer
             <div class="col-md-4">
                 <a href="#work" data-toggle="modal" data-target="#myModal1" class="html thumbnail"><img class="img-responsive img-rounded"
                         alt="An interactive Lite Brite app. HTML, JavaScript, jQuery, and CSS. Features click listeners, class toggles when a dot is selected or a color, and setInterval for the blink." src="jpg/websites/lite-brite.png"></a>
-                <a href="#work" data-toggle="modal" data-target="#myModal2" class="html thumbnail"><img class="img-responsive img-rounded" alt="Javascript app replicating a messaging thread." src="jpg/websites/threadly.png"></a>
+                <a href="#work" data-toggle="modal" data-target="#myModal2" class="html thumbnail"><img class="img-responsive img-rounded" alt="Javascript app replicating a messaging thread." src="jpg/websites/HCA-career-fair-bot.png"></a>
                 <a href="#work" data-toggle="modal" data-target="#myModal3" class="html thumbnail"><img class="img-responsive img-rounded" alt="JavaScript app login" src="jpg/websites/pocket-book.png"></a>
             </div>
 

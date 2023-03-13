@@ -14,3 +14,5 @@ group :jekyll_plugins do
   gem "jekyll-github-metadata"
 end
 gem "github-linguist"
+
+gem "webrick", "~> 1.8"
