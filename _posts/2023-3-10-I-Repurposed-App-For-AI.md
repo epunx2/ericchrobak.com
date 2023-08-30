@@ -5,7 +5,7 @@ date: 2023-03-10 22:00:00 -0500
 author: Eric Chrobak
 ---
 <br>
-Recently, I had the opportunity to share about programming at a local high school career fair. I thought of what I might showcase to the students and thought back to an app I built in a JavaScript class. It received some input and output reponses to the input. My thought was to repurpose the app to receive students reason to learn programming, what they hope to learn, and give some feedback.
+Recently, I had the opportunity to share about software development at a local high school career fair. I thought of what I might showcase to the students and thought back to an app I built in a JavaScript class. It received some input and output reponses to the input. My thought was to repurpose the app to receive students reason to learn programming, what they hope to learn, and give some feedback.
 <br><br>
 The app itself was a simple front end application built with JavaScript and JQuery. My goal was to redevelop the app and then push it to my website. If you've read any of my previous posts then you know that my [website](https://www.ericchrobak.com) is built with Ruby, Jekyll, HMTL, CSS, and JavaScript. [Jekyll](https://jekyllrb.com) is a CMS built with Ruby. 
 <br><br>
@@ -60,7 +60,7 @@ In order to make a change I have the repo cloned locally and launch a server in 
 ```
 jekyll serve
 ```
-However, this requires Jekyll to be installed locally. It had been sometime since I had run the website locally. Since the last time I had run it locally, I've removed all versions of Ruby and rolled back to 2.7.2 for development I have to do for my company. 
+However, this requires Jekyll to be installed locally. It had been sometime since I had run the website locally. Since the last time I had run it locally, I've removed all versions of Ruby and rolled back to 2.7.2 for development I have to do for my [9-5](www.vaspian.com). 
 <br><br>
 This caused a dependency error when running ```bundle install```. It wouldn't install eventmachine. After countless searching on the internet, I tried to install a newer version of Ruby, then reinstalled my Gems, tried to change the Gems directory, etc. All to no avail. This put me in a bit of sweat because it was later in the evening and I need to get some sleep to be ready for the 8am career fair.
 <br><br>
