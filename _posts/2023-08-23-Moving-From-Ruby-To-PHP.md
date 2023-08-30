@@ -5,12 +5,10 @@ date: 2023-08-23 00:00:00 -0500
 author: Eric Chrobak
 ---
 <br>
+At my [9-5](https://www.vaspian.com) we provide a variety of telecom services to our clients and use [Zoho One](https://www.zoho.com/one/) as our ERP. We have a texting platform that sends out mass text messages on behalf of our clients. However, they need the phone numbers verified before sending the sms blast out. We provide a service that scrubs the list of invalid phone numbers. When that is completed it sends an email to our [CRM](https://www.zoho.com/crm/) to generate an invoice. The crm parses the email to generate the invoice. We needed to move away from the email parser due to it's instability.<br><br>
 
 # **It's 2023! Why in the world am I programming in PHP?**
-<br>
-It turns out a lot of companies have applications besides their WordPress website built with [PHP](https://www.php.net/). At my [9-5](https://www.vaspian.com) we provide a variety of telecom services to our clients and use [Zoho One](https://www.zoho.com/one/) as our ERP. We have a texting platform that sends out mass text messages on behalf of our clients. However, they need the phone numbers verified before sending the sms blast out. We provide a service that scrubs the list of invalid phone numbers. When that is completed it sends an email to our [CRM](https://www.zoho.com/crm/) to generate an invoice. The crm parses the email to generate the invoice.<br><br>
-
-We needed to move away from the email parser due to it's instability. We decided to add a class to the existing PHP scrubbing application. This would authenticate with Zoho CRM and send the scrubbing data over via a POST request. I previously developed a Ruby application on AWS Lambda for a different use case. This Ruby application authenticated with Zoho CRM and made a POST request. We decided to change the syntax of the code to work in PHP. <br><br>
+It turns out a lot of companies have applications besides their WordPress website built with [PHP](https://www.php.net/). The application in questions is a PHP application. We decided to add a class to the existing PHP scrubbing application. This would authenticate with Zoho CRM and send the scrubbing data over via a POST request. I previously developed a Ruby application on AWS Lambda for a different use case. This Ruby application authenticated with Zoho CRM and made a POST request. We decided to change the syntax of the code to work in PHP. <br><br>
 
 # **How I built it in PHP**
 
