@@ -14,7 +14,7 @@ Have you ever asked yourself questions like:
 - *Do I need a framework to develop Ruby applications?*
 <br><br>
 
-First off let's discuss why these questions are relevant. The majority of Ruby programming is done using a framework and that framework is probably [Ruby on Rails](https://rubyonrails.org/). If you are not using Rails then you are probably using [Sinatra](http://sinatrarb.com/)(DSL) or Jekyll(CMS). A framework provides you with the pre-build methods and structure to develop applications quickly. Some has already built it or come up with a solution. Rather than reinvent the wheel use their solution. That's where a framework comes into play. I mentioned in my previous blog post that you can [essentially type 2 commands]({% post_url 2021-12-13-Building-A-Basic-Rails-App %}) into your terminal and an Rails app is created. That's the power of a framework. 
+First off let's discuss why these questions are relevant. The majority of Ruby programming is done using a framework and that framework is probably [Ruby on Rails](https://rubyonrails.org/). If you are not using Rails then you are probably using [Sinatra](http://sinatrarb.com/)(DSL) or Jekyll(CMS). A framework provides you with the pre-build methods and structure to develop applications quickly. Someone has already built it or come up with a solution. Rather than reinvent the wheel, use their solution. That's where a framework comes into play. I mentioned in my previous blog post that you can [essentially type 2 commands]({% post_url 2021-12-13-Building-A-Basic-Rails-App %}) into your terminal and an Rails app is created. That's the power of a framework. 
 <br><br>
 
 # **Then why would you build your application without a framework?** 

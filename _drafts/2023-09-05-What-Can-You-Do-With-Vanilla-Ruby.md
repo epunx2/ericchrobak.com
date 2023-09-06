@@ -1,15 +1,16 @@
 ---
 layout: post
-title: How to Extend Your App
-date: 2023-08-29 00:00:00 -0500
+title: What Can You Do With Vanilla Ruby
+date: 2023-09-05 00:00:00 -0500
 author: Eric Chrobak
 ---
 <br>
-I worked in construction previously and we built several home additions. These additions had to integrate with the existing systems of the home like the HVAC, plumbing, and electricity. If you are building up on the house then you have to consider load bearing walls, ventilation, roofing, adding staircases, etc. People are aware of this and don't just start tearing off the side of their house.<br><br>
-They find a contractor, get blueprints, get permits, order material, and then the work starts. From there they dig the hole, pour the foundation, let it sit, frame the walls, put the roof rafters on, add plywood to the wall and roof, etc. Eventually, you put wiring in the walls, plumbing, close up the walls, add lighting, paint, add flooring, do the finishing touches and the work is complete.
+The next goal for the application will be to receive a JSON package and iterate over it.
+
+We will go over use cases of what you can do with vanilla Ruby and give updates on the Vanilla Ruby app and Rails app.
 <br><br>
 
-# **How do you extend your App? With Classes**
+# **What is Vanilla Ruby? It's not at the store...**
 Just like there are various things that you need to consider when you do an addition on a house, you have to do the same when you extend the functionality of an existing application. For instance if your app is a single file with several hundred plus lines of code, you don't want to add another 100 lines of code to extend the application. It becomes unwieldy the larger the file is. The  same applies if you have an MVC application. A great way to extend your application is to create and/or add a library to the application. 
 <br><br>
 
