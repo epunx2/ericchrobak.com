@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Software Engineer
+title: 
 ---
 
 <!-- Project Showcase -->

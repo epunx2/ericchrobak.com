@@ -58,9 +58,6 @@ Pink: #E5C2C0
     .supporting {
         margin-top: 0;
         padding-top: 0;
-    }
-
-    #over-flow, .supporting {
         min-height: 75%;
     }
 
@@ -111,7 +108,7 @@ Pink: #E5C2C0
         margin: 15% 0;
     }
 
-    #over-flow, .supporting {
+    .post, .supporting {
         min-height: 65%;
     }
 
@@ -169,6 +166,14 @@ Pink: #E5C2C0
         padding-bottom: 2.5%;
     }
 
+    .img-responsive {
+        margin: 5% auto;
+    }
+
+    .about {
+        margin: 0 6%;
+    }
+
     #small-content{
         display: none;
         margin: auto;
@@ -218,7 +223,12 @@ Pink: #E5C2C0
     }
 
     .img-responsive {
-    	margin: 15% auto;
+    	margin: 5% auto;
+        width: 20%;
+    }
+
+    .about {
+        margin: 0;
     }
 
     #large-content {
@@ -295,6 +305,15 @@ Pink: #E5C2C0
     .supporting .thumbnail img {
     	width: 100%;
     	border-radius: 4px;
+    }
+
+    /* Blog */
+    .post {
+        margin: 15% 2.5% 10%;
+    }
+
+    .post p {
+        font-size: 1.5em;
     }
 
     /* Modals */

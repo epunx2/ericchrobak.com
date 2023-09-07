@@ -17,7 +17,7 @@ Have you ever asked yourself questions like:
 First off let's discuss why these questions are relevant. The majority of Ruby programming is done using a framework and that framework is probably [Ruby on Rails](https://rubyonrails.org/). If you are not using Rails then you are probably using [Sinatra](http://sinatrarb.com/)(DSL) or Jekyll(CMS). A framework provides you with the pre-build methods and structure to develop applications quickly. Someone has already built it or come up with a solution. Rather than reinvent the wheel, use their solution. That's where a framework comes into play. I mentioned in my previous blog post that you can [essentially type 2 commands]({% post_url 2021-12-13-Building-A-Basic-Rails-App %}) into your terminal and an Rails app is created. That's the power of a framework. 
 <br><br>
 
-# **Then why would you build your application without a framework?** 
+## **Then why would you build your application without a framework?** 
 <br>
 
 **Learn more about the language**
@@ -58,8 +58,8 @@ Less files and lower complexity will increase speed to launch
 These cover some of the main reasons why you might not want to use a framework for your application.
 <br><br>
 
-# **Let's answer 'What Can You Do with Ruby?'**
-
+## **Let's answer 'What Can You Do with Ruby?'**
+<br>
 We talked about why you might not want to use a framework to build your application. However, you can still use a lot of the underlying technology or libraries that Rails and Sinatra are built on. These come in the form of [RubyGems](https://rubygems.org/) which are very similar to packages in JavaScript. 
 <br><br>
 
@@ -82,7 +82,7 @@ With these gems you can call methods that accomplish a wide variety of tasks lik
 That's the tip of the iceberg of what RubyGems can do. This gives us a lot of flexibility and options to solve the problems coming our way. Let's discuss the use case of generating a file. 
 <br><br>
 
-**File Generation**
+## **File Generation**
 <br>
 
 Many companies need to get data in the form of a .csv or a .pdf. That's where the example above would come into play. If you need to process the data then your file may look like this:

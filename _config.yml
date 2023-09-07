@@ -4,7 +4,7 @@ header-img          : jpg/home-bg.png
 email               : eric.chrobak@gmail.com
 copyright_name      : Eric Chrobak
 description: > # this means to ignore newlines until "baseurl:"
-  Learning how to code!
+  Eric Chrobak | Software Engineer
 baseurl             : "" # the subpath of your site, e.g. /blog
 url                 : ""
 twitter_username    :

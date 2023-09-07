@@ -11,6 +11,7 @@ The app itself was a simple front end application built with JavaScript and JQue
 <br><br>
 
 ## **My website**
+<br>
 Here is a little more background about my website
 - Ruby 3.1.2
 - Is deployed when a push is made to the [Github repository](https://github.com/epunx2/ericchrobak.com)
@@ -18,13 +19,14 @@ Here is a little more background about my website
 <br><br>
 
 ## **The APP**
+<br>
 The JavaScript app is a very simple form with an input box, and then an un order list below with the line items being the comments or threads.
 <br><br>
 In the first iteration of the application there was only a few questions which had only a couple of response. Here the goal was going to be to give provide a few branches in discussion. 
 <br><br>
 
 
-**The Development**
+## **The Development**
 <br>
 This was accomlished with a series of case statements. The initial case statement keeps track of which question your on 1,2,3. Then it calls another function to parse the reponse to the question. 
 Example:
@@ -56,6 +58,7 @@ As a little easter egg if they input my name the bot pretended to crash and say 
 <br><br>
 
 ## **The Issue**
+<br>
 In order to make a change I have the repo cloned locally and launch a server in a terminal with:
 ```
 jekyll serve
@@ -66,15 +69,18 @@ This caused a dependency error when running ```bundle install```. It wouldn't in
 <br><br>
 
 ## **Resolution**
+<br>
 I decided to run the app locally. So I opened up the HTML file in my browser and it worked fine. My work was done!
 <br>
 As a side note later on I realized that had I set the local version of Ruby for the website to 3.1.2 ```jekyll serve``` would have worked fine. I would not have been able to push this post live without working that out.
 <br><br>
 
 ## **What's Next**
+<br>
 - The vanilla Ruby application will receive a JSON package and iterate over it.
 - Update on the Rails App - The goal was to add templates for the articles so that there is a header, hero image, and body text. Not sure if I'll get to that
 <br><br>
 
 ## **Our next topic**
+<br>
 Hot to get into Software Engineering
