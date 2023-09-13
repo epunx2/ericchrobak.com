@@ -157,6 +157,10 @@ Pink: #E5C2C0
         margin: 10% 0;
     }
 
+    .about p {
+        margin: 0 20%;
+    }
+
     #carousel-example-generic {
         width: 45%;
     }
@@ -166,12 +170,9 @@ Pink: #E5C2C0
         padding-bottom: 2.5%;
     }
 
-    .img-responsive {
-        margin: 5% auto;
-    }
-
-    .about {
-        margin: 0 6%;
+    .img-circle {
+        width: 7.5%;
+        margin: 2.5% auto;
     }
 
     #small-content{
@@ -190,14 +191,6 @@ Pink: #E5C2C0
     .main p, .main ul li, .main ol li {
         font-size: 1.5em;
         line-height: 2em;
-    }
-
-    .blog .article h2 {
-        font-size: 2em;
-    }
-
-    .blog .article p {
-        font-size: 1.25em;
     }
 
     .footer i:hover {
@@ -228,7 +221,7 @@ Pink: #E5C2C0
     }
 
     .about {
-        margin: 0;
+        margin-top: 15%;
     }
 
     #large-content {
@@ -272,8 +265,8 @@ Pink: #E5C2C0
 }
 
 @media only screen and (min-width: 459px) {
-    .jumbotron .blog .article, .jumbotron .blog-title {
-    	margin: 5%;
+    .jumbotron .blog .article {
+    	margin: 2.5% 10% 0;
     }
 
     /* Modals */
@@ -292,6 +285,7 @@ Pink: #E5C2C0
 }
 
 @media only screen and (max-width: 458px) {
+    
     /*Supporting*/
     #supporting-nav {
     	margin: 0 auto;
@@ -308,6 +302,10 @@ Pink: #E5C2C0
     }
 
     /* Blog */
+    .blog-button {
+        font-size: 2em;
+    }
+
     .post {
         margin: 15% 2.5% 10%;
     }

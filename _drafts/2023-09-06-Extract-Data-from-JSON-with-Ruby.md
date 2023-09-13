@@ -1,16 +1,15 @@
 ---
 layout: post
-title: What Can You Do With Vanilla Ruby
-date: 2023-09-05 00:00:00 -0500
+title: Extract Data from JSON with Ruby
+date: 2023-09-06 00:00:00 -0500
 author: Eric Chrobak
 ---
 <br>
-The next goal for the application will be to receive a JSON package and iterate over it.
+I have a simple app I built to receive a string and pass that string to a .txt file. The next goal of the application was to receive data from a .json file. The main hurdles that I had to face were setting headers and formatting the data to output to a file. That required a complete overhaul of the app.
 
-We will go over use cases of what you can do with vanilla Ruby and give updates on the Vanilla Ruby app and Rails app.
 <br><br>
 
-# **What is Vanilla Ruby? It's not at the store...**
+## **Setting the Headers**
 Just like there are various things that you need to consider when you do an addition on a house, you have to do the same when you extend the functionality of an existing application. For instance if your app is a single file with several hundred plus lines of code, you don't want to add another 100 lines of code to extend the application. It becomes unwieldy the larger the file is. The  same applies if you have an MVC application. A great way to extend your application is to create and/or add a library to the application. 
 <br><br>
 

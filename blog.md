@@ -15,8 +15,8 @@ title:
           <li class="article">
             <h2>{{ post.title }}</h2>
             <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-            <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 300 }}</p>
-            <button class ="blog-button"><a href="{{ post.url }}">Read More</a></button>
+            <p class="excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 300 }}</p>
+            <button class ="blog-button" type="button"><a href="{{ post.url }}">Read More</a></button>
           </li>
         {% endfor %}
       </ul>

@@ -38,7 +38,10 @@ div {
 
 .container, .container-fluid, .row {
 	width: 100%;
+}
 
+.about {
+	margin-top: 5%;
 }
 
 .row {
@@ -122,9 +125,9 @@ nav #name {
 	text-align: center;
 }
 
-.blog-title{
+/* .blog-title{
 	margin: 10% auto;
-}
+} */
 
 .jumbotron h1 {
 	font-size: 3em;
@@ -133,14 +136,24 @@ nav #name {
 .jumbotron .blog {
 	list-style: none;
 	text-align: left;
-	padding: 3%;
+	padding: 0;
+	margin: 0 auto;
 }
 
 .jumbotron .blog .article  {
-	margin: 5% auto;
-	padding: 1em;
+	margin: 10% 5%;
+	padding: 0 2em 1em;
 	border: solid 1px rgba(3,89,198, 0.9);
 	border-radius: 5px;
+	text-align: center;
+}
+
+.jumbotron .blog .article h2 {
+	font-weight: bold;
+}
+
+.excerpt {
+	text-align: left;
 }
 
 .blog-button {
@@ -149,7 +162,6 @@ nav #name {
 	background-color: rgb(0, 43, 54);
 	text-decoration: none;
 	padding: 5px 15px;
-	align-self: center;
 }
 
 .blog-button:hover {
