@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Extracting Data from JSON with Ruby
-date: 2023-09-13 23:00:00 -0500
+date: 2023-09-13 22:45:00 -0500
 author: Eric Chrobak
 ---
 <br>
