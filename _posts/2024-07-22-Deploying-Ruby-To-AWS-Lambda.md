@@ -15,8 +15,10 @@ In this article I'll go over:
 1. Benefits of Lambda Functions
 2. Setting up your Ruby environment for AWS Lambda
 3. Setting up your AWS Lambda Function
-4. Configure your Repository for AWS Lambda
-5. Deploying your Ruby Function to AWS Lambda
+4. Developing Ruby Function
+5. Making Changes and Deploying Function
+6. Testing your Ruby Function
+7. Common Issues / Troubleshooting
 
 <br>
 
@@ -41,6 +43,8 @@ I enjoy using serverless tools like Lambda as it allows me to get right to work 
 AWS Lambda supports 2 runtimes: [Ruby 3.2.0](https://docs.ruby-lang.org/en/3.2/) and [Ruby 3.3.0](https://docs.ruby-lang.org/en/3.3/). We're going to use Rbenv as the version manager tool for Ruby and Ruby 3.3.0.
 
 > **It is crucial that you setup your Ruby environment as it is not possible to use any out of the box Ruby version installed on your machine. It will not work. Additionally, the steps are sequential and you will run into problems doing them out of order.**
+
+> **Your first step is to setup your repository on either GitHub, BitBucket, or GitLab.**
 
 ## **Mac, Cloud9, Codespaces**
 1. Install Ruby version manager tool [Rbenv](https://github.com/rbenv/rbenv) and [Ruby Build](https://github.com/rbenv/ruby-build). Examples of how to install on different systems:
