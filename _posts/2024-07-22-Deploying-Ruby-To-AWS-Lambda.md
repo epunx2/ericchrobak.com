@@ -5,10 +5,10 @@ date: 2024-07-25 08:00:00 -0500
 author: Eric Chrobak
 ---
 <br>
-I use AWS Lambda Functions for a variety of tasks at my 9-5. Typically, this is to automate tasks that are more complicated, need redundancy, need to run for an extended period of time, or need a bunch of dependencies. I development locally on a Mac, [AWS Cloud9](https://aws.amazon.com/cloud9/), [GitHub Codespaces](https://github.com/features/codespaces), or in the AWS Lambda UI. I needed a CD/CI process setup to push the code to version control and deploy to Lambda to make my life easier.
+I needed a CD/CI pipeline to push Ruby apps to version control and deploy to AWS Lambda. The documentation out there is disjointed. I dealt with many issues and lots of trial and error trying to setup this process. It was crucial to have this pipeline setup so I can work on the applications no matter where I am.
 
-<br>
-I dealt with many issues trying to setup this process. This article is the shortcut for setting this up.
+I do development in a variety of places including locally on a Mac, [AWS Cloud9](https://aws.amazon.com/cloud9/), [GitHub Codespaces](https://github.com/features/codespaces), or in the AWS Lambda UI. Now that the pipeline is setup I just setup the environment, clone the repo and get to work. This article is the shortcut for others setting this pipeline up.
+
 
 <br>
 In this article I'll go over:
@@ -126,7 +126,7 @@ AWS Lambda supports 2 runtimes: [Ruby 3.2.0](https://docs.ruby-lang.org/en/3.2/)
   ```bash
   $ touch lambda_function.rb
   ```
-6. Add function to the Ruby file - Lambda requires lambda_handler as the function name. This article won't go into what pass through event or context. You can read more about it [here](https://docs.aws.amazon.com/lambda/latest/dg/ruby-handler.html)
+6. Add function to the Ruby file - Lambda requires lambda_handler as the function name. This article won't go into what passes through event or context. You can read more about it [here](https://docs.aws.amazon.com/lambda/latest/dg/ruby-handler.html)
   ```ruby
   def lambda_handler(event:, context:)
     # Your code here
@@ -239,8 +239,8 @@ GitHub and Atlassian will automatically deploy the changes to AWS Lambda.
 <br>
 
 # Common issues & Troubleshooting
-1. **No Using The Right Ruby version - Error - Cannot load such file - Local Ruby version doesn't match Lambda Ruby version**
-    - You will see an error saying "*cannot load such file*". Here you can see that the Lambda Ruby version is set to 3.3.0. If you are using a different version, you will need to set your local Ruby version to 3.3.0, bundle the gems again, and push the changes to Version control.
+1. **No Using The Right Ruby version - Error - *"Cannot load such file"* - Local Ruby version doesn't match Lambda Ruby version**
+    - You will see an error saying "*cannot load such file*". Here you can see that the Lambda Ruby version is set to 3.3.0. If you are using a different version, you will need to set your local Ruby version to 3.3.0, bundle the gems again, and push the changes to version control.
 
     > /var/lang/lib/ruby/`3.3.0`/rubygems/core_ext/kernel_require.rb:59:in `require
 
