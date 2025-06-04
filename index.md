@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 
+title: Sofware Engineer
 ---
 
 <!-- Project Showcase -->
 <div class="jumbotron">
     <div class="container">
-        <h1 class="intro">Web Development Solutions for Business</h1>
+        <h1 class="intro">Software Engineering</h1>
         <!--Slideshow-->
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->

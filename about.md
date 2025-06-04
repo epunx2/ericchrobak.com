@@ -22,7 +22,7 @@ title: About
 <div class="main">
     <div class="container-fluid">
         <div class="row">
-            <p id="eric">Eric is a web developer specializing in:</p>
+            <p id="eric">Eric is a software engineer specializing in:</p>
             <div class="col-xs-6">
                 <ul>
                     <li>

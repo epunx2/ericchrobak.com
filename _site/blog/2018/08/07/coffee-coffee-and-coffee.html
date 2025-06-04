@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146581885-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-146581885-1');
+	</script>
+	<title>COFFEE, Coffee, and coffee... | Eric Chrobak</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Eric Chrobak">
+	<meta name="google-site-verification" content="mlSH_0PUjKe4Vjt1l5LJBdkVBq2rtdxkN0A2gV92NU4" />
+	<meta name="description" content="Eric Chrobak is a software engineer. Skills include Ruby, Rails, HTML, CSS, and JavaScript.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<!--CSS-->
+	<link rel="shortcut icon" type="image/icon" href="/jpg/webfavicon.png">
+	<link rel="icon" type="image/icon" href="/jpg/webfavicon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/scrolling-nav.css">
+	<!-- custom style -->
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+	<style type="text/css"></style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="/javascript/jquery.easing.min.js"></script>
+	<script src="/javascript/scroll-down.js"></script>
+	<script src="/javascript/script.js"></script>
+	<script src="/javascript/scrolling-nav.js"></script>
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top smart-scroll" role="navigation">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" id="name" href="#page-top">EC</a>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll active" href="http://localhost:4000/">Home</a>
+                </li>
+                
+                <li>
+                    <a class="page-scroll" href="http://localhost:4000/about.html">About</a>
+                </li>
+                
+                <li>
+                    <a class="page-scroll" href="http://localhost:4000/blog.html">Blog</a>
+                </li>
+                
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+	<div class="post">
+    <div class="container-fluid">
+        <h1>COFFEE, Coffee, and coffee...</h1>
+        <p id="date">07 Aug 2018 - Eric Chrobak</p>
+        <p>Coffee and coding seem to go together like peanut butter and jelly. When I hunker down to work on a project there is nothing like a nice cup of java to get me going!</p>
+
+<p>For the course work at Flatiron a recent project required me to pull data from websites through a method called scraping. It works just like it sounds, you are literally scraping data off of a website. Similar to scraping snow off of the car  you move the snow elsewhere. The difference with programming is the data stays on the website. But you do get the data to manipulate or use as you see fit.</p>
+
+<p>Then I was to provide an interface for the user via the command line requesting input. They would interact with the data. Classes would be created and instances of those classes based on the data that I scraped.</p>
+
+<p>My first attempt was to scrape from Yelp’s website and find local coffee shops. The first step was to create my command line interface(CLI). This would be what the user would interact with. There would be some text output in the terminal/bash/console/etc that would request input from the user, then based on that input the CLI would respond back with data or exit the program.</p>
+
+<p>The CLI was a Ruby class that I created with methods to display a welcome, menu, and goodbye message. Inside of my menu I called another class that scraped the Yelp page. Then my scraper class parsed the data scraped and created instance of coffee shop classes based on the elements containing data returned by the scraper. Everything worked well except for the most important part: Yelp wouldn’t let me scrape their website.</p>
+
+<p><strong>Major lesson learned:</strong>
+Be sure to test along the way the parts you are adding are working. I built my scraper class and coffee shop class without testing if yelp would allow me to scrape their website. So, I had to undo everything and start from scratch.</p>
+
+<p>Then I tried another website with details on coffee. Their website was difficult to scrape and create new instances of the coffee class. So, I had to settle on Wikipedia’s page on coffee. From their I decided to scrape from some tables that had info on coffee roasts.</p>
+
+<p>I created coffee roasts classes based on the info provided including common names, temperature roasted, and other details about light, medium, and dark coffee roasts. After running some tests things looked to be working smoothly. The interface responded to the user’s input. From there I rearranged the interface text output and order somewhat to make it more visually appealling and make a simpler experience for the user.</p>
+
+<p>At this point the app scrapes the page well, creates the coffee roasts classes, responds to the user well, and meets the criteria for the project.</p>
+
+<p><strong>Features of the app:</strong></p>
+
+<ol>
+  <li>CLI class
+    <ul>
+      <li>Outputs welcome to user.</li>
+      <li>Receives input.</li>
+      <li>Calls Scraper class</li>
+      <li>Retrives Coffee Roast instances from Coffee Roast class</li>
+      <li>Accesses the input with a case statement, responds based on input with data, a list of options, or says good bye and closes.</li>
+    </ul>
+  </li>
+  <li>Scraper Class
+    <ul>
+      <li>Scrapes the wikipedia page</li>
+      <li>Parses the elements returned to retrieve data</li>
+      <li>Creates Coffee roast instances with the retrieved data</li>
+    </ul>
+  </li>
+  <li>Coffee Roast Class
+    <ul>
+      <li>Sets attr assesor for the key:values for the Roasts</li>
+      <li>Adds the instances to a class variable</li>
+      <li>Provides a method to return all instances of class</li>
+    </ul>
+  </li>
+</ol>
+
+<p>The project seemed like climbing a mountain at first but, after breaking it down to parts it didn’t end up being as difficult as it originally seemed. It was much easier than I thought and I feel much more confident in programming abilities and Ruby in general after this.</p>
+
+    </div>
+</div>
+
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <a href="mailto:eric.chrobak@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/epunx2">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:312-513-8086">
+                        <i class="fa fa-phone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/echrobak">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright text-muted">&copy; Eric Chrobak 2015-2025</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

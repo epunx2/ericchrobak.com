@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146581885-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-146581885-1');
+	</script>
+	<title>Deploying an AWS Lambda Ruby Function | Eric Chrobak</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Eric Chrobak">
+	<meta name="google-site-verification" content="mlSH_0PUjKe4Vjt1l5LJBdkVBq2rtdxkN0A2gV92NU4" />
+	<meta name="description" content="Eric Chrobak is a software engineer. Skills include Ruby, Rails, HTML, CSS, and JavaScript.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<!--CSS-->
+	<link rel="shortcut icon" type="image/icon" href="/jpg/webfavicon.png">
+	<link rel="icon" type="image/icon" href="/jpg/webfavicon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/scrolling-nav.css">
+	<!-- custom style -->
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+	<style type="text/css"></style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="/javascript/jquery.easing.min.js"></script>
+	<script src="/javascript/scroll-down.js"></script>
+	<script src="/javascript/script.js"></script>
+	<script src="/javascript/scrolling-nav.js"></script>
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top smart-scroll" role="navigation">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" id="name" href="#page-top">EC</a>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll active" href="http://localhost:4000/">Home</a>
+                </li>
+                
+                <li>
+                    <a class="page-scroll" href="http://localhost:4000/about.html">About</a>
+                </li>
+                
+                <li>
+                    <a class="page-scroll" href="http://localhost:4000/blog.html">Blog</a>
+                </li>
+                
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+	<div class="post">
+    <div class="container-fluid">
+        <h1>Deploying an AWS Lambda Ruby Function</h1>
+        <p id="date">25 Jul 2024 - Eric Chrobak</p>
+        <p><br />
+I needed a CD/CI pipeline to push Ruby apps to version control and deploy to AWS Lambda. The documentation out there is disjointed. I dealt with many issues and lots of trial and error trying to setup this process. It was crucial to have this pipeline setup so I can work on the applications no matter where I am.</p>
+
+<p>I do development in a variety of places including locally on a Mac, <a href="https://aws.amazon.com/cloud9/">AWS Cloud9</a>, <a href="https://github.com/features/codespaces">GitHub Codespaces</a>, or in the AWS Lambda UI. Now that the pipeline is setup I just setup the environment, clone the repo and get to work. This article is the shortcut for others setting this pipeline up.</p>
+
+<p><br />
+In this article I’ll go over:</p>
+<ol>
+  <li>Benefits of Lambda Functions</li>
+  <li>Setting up your Ruby environment for AWS Lambda</li>
+  <li>Setting up your AWS Lambda Function</li>
+  <li>Developing Ruby Function</li>
+  <li>Making Changes and Deploying Function</li>
+  <li>Testing your Ruby Function</li>
+  <li>Common Issues / Troubleshooting</li>
+</ol>
+
+<p><br /></p>
+
+<hr />
+
+<h1 id="benefits-of-lambda-functions">Benefits of Lambda Functions</h1>
+<p>Lambda gives you lots of options to manage, deploy, monitor, and execute your functions. I find the options overwhelming and it has a bit of a learning curve. However, you have a lot power with Lambda.</p>
+<ul>
+  <li>Setup deployment pipelines with AWS, GitHub, BitBucket, or GitLab</li>
+  <li>Trigger your functions via a URL or a schedule</li>
+  <li>Store your function, packages, dependencies, files, etc in an S3 bucket</li>
+  <li>Develop your code in the Cloud9 IDE right in the Function UI, build it in Cloud9, develop locally</li>
+  <li>Access to various runtimes: Node.js, Python, Ruby, Java, .NET, and custom runtimes</li>
+  <li>Develop your own packages, libraries, dependencies and upload them for use in your functions</li>
+  <li>Version control built in</li>
+  <li>Build test versions to try out without affecting the production version</li>
+</ul>
+
+<p>I enjoy using serverless tools like Lambda as it allows me to get right to work building the application.</p>
+
+<p><br /></p>
+
+<h1 id="how-to-setup-your-ruby-environment-for-aws-lambda">How to setup Your Ruby Environment for AWS Lambda</h1>
+<p>AWS Lambda supports 2 runtimes: <a href="https://docs.ruby-lang.org/en/3.2/">Ruby 3.2.0</a> and <a href="https://docs.ruby-lang.org/en/3.3/">Ruby 3.3.0</a>. We’re going to use Rbenv as the version manager tool for Ruby and Ruby 3.3.0.</p>
+
+<blockquote>
+  <p><strong>It is crucial that you setup your Ruby environment as it is not possible to use any out of the box Ruby version installed on your machine. It will not work. Additionally, the steps are sequential and you will run into problems doing them out of order.</strong></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Your first step is to setup your repository on either GitHub, BitBucket, or GitLab.</strong></p>
+</blockquote>
+
+<h2 id="mac-cloud9-codespaces"><strong>Mac, Cloud9, Codespaces</strong></h2>
+<ol>
+  <li>Install Ruby version manager tool <a href="https://github.com/rbenv/rbenv">Rbenv</a> and <a href="https://github.com/rbenv/ruby-build">Ruby Build</a>. Examples of how to install on different systems:
+    <ul>
+      <li><strong><em>Mac using Homebrew - Ruby Build included</em></strong>
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span>brew <span class="nb">install </span>rbenv
+ <span class="nv">$ </span>brew <span class="nb">install </span>ruby build
+ <span class="nv">$ </span>brew update ruby build
+</code></pre></div>        </div>
+      </li>
+      <li><strong><em>Rbenv install on Cloud9, Codespaces using yum, apt, apt-get - Ruby Build excluded</em></strong>
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span><span class="nb">sudo </span>yum <span class="nb">install</span> <span class="nt">-y</span> rbenv
+ <span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>rbenv
+ <span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>rbenv
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Set up your shell to load rbenv:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span>rbenv init
+</code></pre></div>    </div>
+  </li>
+  <li>Install Ruby 3.3.0 with Rbenv:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span>rbenv <span class="nb">install </span>3.3.0
+</code></pre></div>    </div>
+  </li>
+  <li>Clone repo:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span>git clone https://github.com/username/repository_name.git
+</code></pre></div>    </div>
+  </li>
+  <li>Set Ruby version for folder to 3.3.0:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>rbenv <span class="nb">local </span>3.3.0
+</code></pre></div>    </div>
+  </li>
+  <li>Install <a href="https://bundler.io/">Bundler</a> - Gem manager (JavaScript npm equivalent)
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span>gem <span class="nb">install </span>bundler
+</code></pre></div>    </div>
+  </li>
+  <li>Install gems
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span>bundle <span class="nb">install</span>
+</code></pre></div>    </div>
+    <p><br /></p>
+  </li>
+</ol>
+
+<h1 id="how-to-setup-your-aws-lambda-function">How to Setup Your AWS Lambda Function</h1>
+<ol>
+  <li>Create a new Lambda Function in the AWS Console</li>
+  <li>Choose the Ruby 3.3 runtime (Use 3.2 if your environment is setup for 3.2)</li>
+  <li>Create security credentials for your environment variables</li>
+  <li>Click your user name in the top right corner</li>
+  <li>Click Security Credentials</li>
+  <li>Click Create Access Key in Access Keys section</li>
+  <li>Copy the Access Key ID and Secret Access Key</li>
+  <li>In your version control software add the credentials and any API tokens as environment variables</li>
+  <li>GitHub: Settings &gt; Secrets and Variables &gt; Actions &gt; New Repository Secret</li>
+  <li>BitBucket: Repository Settings &gt; Repository Variables &gt; Add</li>
+</ol>
+
+<p><br /></p>
+
+<h1 id="developing-your-function">Developing Your Function</h1>
+<ol>
+  <li>Add .env file to your project
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span><span class="nb">touch</span> .env
+</code></pre></div>    </div>
+  </li>
+  <li>Add your AWS variables to the .env file
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">AWS_ACCESS_KEY_ID</span><span class="o">=</span>your_access_key_id
+  <span class="nv">AWS_SECRET_ACCESS_KEY</span><span class="o">=</span>your_secret_access_key
+  <span class="nv">AWS_REGION</span><span class="o">=</span>your_region
+  <span class="nv">FUNCTION_NAME</span><span class="o">=</span>your_function_name
+</code></pre></div>    </div>
+  </li>
+  <li>Get API Tokens and add them to the .env file
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">CLIENT_ID</span><span class="o">=</span>your_client_id
+  <span class="nv">CLIENT_SECRET</span><span class="o">=</span>your_client_secret
+  <span class="nv">REFRESH_TOKEN</span><span class="o">=</span>your_refresh_token
+</code></pre></div>    </div>
+  </li>
+  <li>Add the .env file to your .gitignore file
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span><span class="nb">echo</span> <span class="s1">'.env'</span> <span class="o">&gt;&gt;</span> .gitignore
+</code></pre></div>    </div>
+  </li>
+  <li>Create a Ruby file for your function
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span><span class="nb">touch </span>lambda_function.rb
+</code></pre></div>    </div>
+  </li>
+  <li>Add function to the Ruby file - Lambda requires lambda_handler as the function name. This article won’t go into what passes through event or context. You can read more about it <a href="https://docs.aws.amazon.com/lambda/latest/dg/ruby-handler.html">here</a>
+    <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">lambda_handler</span><span class="p">(</span><span class="n">event</span><span class="p">:,</span> <span class="n">context</span><span class="p">:)</span>
+ <span class="c1"># Your code here</span>
+  <span class="k">end</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Add dontenv gem to your Gemfile. This allows pulling in the environment variables from the .env file
+    <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">gem</span> <span class="s1">'dotenv'</span>
+</code></pre></div>    </div>
+    <p><br /></p>
+  </li>
+</ol>
+
+<h1 id="making-changes-and-deploying">Making Changes and Deploying</h1>
+<blockquote>
+  <p>I’m assuming you will implement your own testing methods. The only testing I’m using here is running the function.</p>
+</blockquote>
+
+<ul>
+  <li>Make your changes</li>
+  <li>Run application to test
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span>ruby lambda_function.rb
+</code></pre></div>    </div>
+  </li>
+  <li>Add yaml file for deployment
+    <ul>
+      <li>GitHub
+        <ol>
+          <li>Add yaml file to .github/workflows folder
+            <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span><span class="nb">mkdir</span> <span class="nt">-p</span> .github/workflows
+  <span class="nv">$ </span><span class="nb">touch</span> .github/workflows/main.yml
+</code></pre></div>            </div>
+          </li>
+          <li>Build yaml file - It needs steps to checkout source code, zip files, and deploy
+  ```yaml
+  name: Deploy Lambda Function</li>
+        </ol>
+
+        <p>on: [push]</p>
+
+        <p>jobs:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>deploy_zip:
+  name: deploy lambda function
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout source code
+      uses: actions/checkout@v3
+    - name: Build binary
+      run: |
+        sudo apt update &amp;&amp; sudo apt install -y zip &amp;&amp; sudo zip -r code.zip *
+    - name: default deploy
+      uses: appleboy/lambda-action@v0.2.0
+      with:
+        aws_access_key_id: $
+        aws_secret_access_key:  $
+        aws_region: $
+        function_name: $
+        zip_file: code.zip   ```
+</code></pre></div>        </div>
+      </li>
+      <li>BitBucket
+        <ol>
+          <li>Add yaml file to root folder
+            <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span><span class="nb">touch </span>bitbucket-pipelines.yml
+</code></pre></div>            </div>
+          </li>
+          <li>Build yaml file - It needs steps to zip the files and a step to deploy to AWS Lambda
+  ```yaml
+  pipelines:
+ default:
+            <ul>
+              <li>step:
+  name: Build and package
+  script:
+    - apt-get update &amp;&amp; apt-get install -y zip
+    - zip -r code.zip *
+  artifacts:
+    - code.zip</li>
+              <li>step:
+  name: Update Lambda Code
+  script:
+    - pipe: atlassian/aws-lambda-deploy:0.2.1
+      variables:
+        AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+        AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+        AWS_DEFAULT_REGION: $region
+        FUNCTION_NAME: $FUNCTION_NAME
+        COMMAND: ‘update’
+        ZIP_FILE: ‘code.zip’
+  ```</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>Bundle gems for deployment - Gems have to be bundled in the vendor/bundle folder in order for Lambda to use them
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  bundle config <span class="nb">set</span> <span class="nt">--local</span> path <span class="s1">'vendor/bundle'</span> <span class="o">&amp;&amp;</span> bundle <span class="nb">install</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Push changes to repo
+    <ul>
+      <li>Add to staging
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git add <span class="nt">--all</span>
+</code></pre></div>        </div>
+      </li>
+      <li>Commit Changes
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s1">'your message'</span>
+</code></pre></div>        </div>
+      </li>
+      <li>Push to GitHub or Atlassian <em>(you may be prompted to enter your GitHub app password)</em>
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git push origin main
+</code></pre></div>        </div>
+        <p>GitHub and Atlassian will automatically deploy the changes to AWS Lambda.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h1 id="testing-deployment">Testing Deployment</h1>
+<ol>
+  <li>Go to the AWS Console</li>
+  <li>Click on the Lambda Function</li>
+  <li>Click on test</li>
+  <li>Add a test event</li>
+  <li>Click test</li>
+  <li>Check the logs for the function</li>
+</ol>
+
+<p><br /></p>
+
+<h1 id="common-issues--troubleshooting">Common issues &amp; Troubleshooting</h1>
+<ol>
+  <li><strong>No Using The Right Ruby version - Error - <em>“Cannot load such file”</em> - Local Ruby version doesn’t match Lambda Ruby version</strong>
+    <ul>
+      <li>You will see an error saying “<em>cannot load such file</em>”. Here you can see that the Lambda Ruby version is set to 3.3.0. If you are using a different version, you will need to set your local Ruby version to 3.3.0, bundle the gems again, and push the changes to version control.</li>
+    </ul>
+
+    <blockquote>
+      <p>/var/lang/lib/ruby/<code class="language-plaintext highlighter-rouge">3.3.0</code>/rubygems/core_ext/kernel_require.rb:59:in `require</p>
+    </blockquote>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">{</span>
+   <span class="s2">"errorMessage"</span>: <span class="s2">"cannot load such file -- lambda_function (LoadError)"</span>,
+   <span class="s2">"errorType"</span>: <span class="s2">"Init&lt;LoadError&gt;"</span>,
+   <span class="s2">"stackTrace"</span>: <span class="o">[</span>
+     <span class="s2">"/var/lang/lib/ruby/3.3.0/rubygems/core_ext/kernel_require.rb:59:in </span><span class="sb">`</span>require<span class="s1">'",
+     "/var/lang/lib/ruby/3.3.0/rubygems/core_ext/kernel_require.rb:59:in `require'</span><span class="s2">",
+     "</span>/var/task/hello_ruby_record.rb:1:in <span class="sb">`</span><span class="s2">&lt;top (required)&gt;'"</span>,
+     <span class="s2">"/var/lang/lib/ruby/3.3.0/rubygems/core_ext/kernel_require.rb:59:in </span><span class="sb">`</span>require<span class="s1">'",
+     "/var/lang/lib/ruby/3.3.0/rubygems/core_ext/kernel_require.rb:59:in `require'</span><span class="s2">"
+   ]
+ }
+</span></code></pre></div>    </div>
+  </li>
+  <li><strong>Gems Not Installed In The Vendor Folder - Error message: “Cannot load such file - gemname”</strong>
+    <ul>
+      <li>The error message is similar to above but, it will list one of the gems in your gem file or that you are requiring in your app. Make sure you bundle the gems in the vendor/bundle folder.</li>
+    </ul>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="o">{</span>
+     <span class="s2">"errorMessage"</span>: <span class="s2">"cannot load such file -- mysql2"</span>,
+     <span class="s2">"errorType"</span>: <span class="s2">"Init&lt;LoadError&gt;"</span>,
+     <span class="s2">"stackTrace"</span>: <span class="o">[</span>
+       <span class="s2">"/var/lang/lib/ruby/3.3.0/rubygems/core_ext/kernel_require.rb:59:in </span><span class="sb">`</span>require<span class="s1">'",
+       "/var/lang/lib/ruby/3.3.0/rubygems/core_ext/kernel_require.rb:59:in `require'</span><span class="s2">",
+       "</span>/var/task/hello_ruby_record.rb:3:in <span class="sb">`</span><span class="s2">&lt;top (required)&gt;'"</span>,
+       <span class="s2">"/var/lang/lib/ruby/3.3.0/rubygems/core_ext/kernel_require.rb:59:in </span><span class="sb">`</span>require<span class="s1">'",
+       "/var/lang/lib/ruby/3.3.0/rubygems/core_ext/kernel_require.rb:59:in `require'</span><span class="s2">"
+     ]
+   }
+</span></code></pre></div>    </div>
+  </li>
+  <li><strong>Environment Variables Missing/Not Set/Incorrect</strong>
+    <ul>
+      <li>You will see a variety of errors depending on how you are handling exceptions. Make sure you set the environment variables in Lambda Configuration</li>
+    </ul>
+  </li>
+  <li><strong>Application is Running Twice</strong>
+    <ul>
+      <li>AWS has an init phase that runs before the function is called. Once it runs successfully then it will execute all the code in the function. It has a timeout limit of 10 seconds.</li>
+    </ul>
+
+    <p>You can see below I am keeping the code in the Lambda Handler to a minimum and calling a method that processes the response. When the init process runs it will only initialize the ApiName class and variable and check the Lambda_Handler. It will not call the process_array method. You can read more about the init and invoke process <a href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtime-environment.html#runtimes-lifecycle-ib">here</a>.</p>
+
+    <p>This is important as any code that can be run within 10 seconds of the init phase will run. Then it will start the invoke phase and execute all the code. So if you are doing any data transformations, Database read/write, API read/write in the Lambda_handler it will run in the init phase and the invoke phase.</p>
+
+    <p>You can end up with duplicate data in the database, API calls, etc. So keep the code in the Lambda_handler to a minimum and call methods that do the processing.</p>
+    <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">require</span> <span class="s1">'faraday'</span>
+ <span class="nb">require</span> <span class="s1">'dotenv/load'</span>
+ <span class="nb">require_relative</span> <span class="s1">'helpers/helper-methods'</span>
+
+ <span class="vg">$logger</span> <span class="o">=</span> <span class="no">Logger</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="vg">$stdout</span><span class="p">)</span>
+ <span class="vg">$api_name</span> <span class="o">=</span> <span class="no">ApiName</span><span class="p">.</span><span class="nf">new</span>
+ <span class="vg">$variable1</span> <span class="o">=</span> <span class="n">variable</span>
+ <span class="vg">$variable2</span> <span class="o">=</span> <span class="n">variable</span>
+
+ <span class="k">def</span> <span class="nf">lambda_handler</span><span class="p">(</span><span class="n">event</span><span class="p">:,</span> <span class="n">context</span><span class="p">:)</span>
+   <span class="vg">$logger</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="s1">'Lambda Handler'</span><span class="p">)</span>
+   <span class="n">response</span> <span class="o">=</span> <span class="vg">$api_name</span><span class="p">.</span><span class="nf">method_name</span>
+   <span class="k">if</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="nf">class</span> <span class="o">==</span> <span class="s2">"Array"</span><span class="p">)</span>
+     <span class="n">process_array</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+   <span class="k">else</span>
+     <span class="vg">$logger</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+   <span class="k">end</span>
+ <span class="k">end</span>
+
+ <span class="k">def</span> <span class="nf">process_array</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+   <span class="n">response</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">item</span><span class="o">|</span>
+     <span class="vg">$logger</span><span class="p">.</span><span class="nf">info</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+     <span class="c1"># Do something with the item</span>
+   <span class="k">end</span>
+ <span class="k">end</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>This should cover the bulk of what you need to know to setup a deployment pipeline from your Ruby environment to AWS Lambda. A lot of the process will be the same for JavaScript, Python, Java, etc. You will need to keep in mind the init and invoke phases, using the correct runtime in your development and production environments, setting environment variables, installing packages, and configuring your yaml file for deployment.</p>
+
+    </div>
+</div>
+
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <a href="mailto:eric.chrobak@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/epunx2">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:312-513-8086">
+                        <i class="fa fa-phone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/echrobak">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright text-muted">&copy; Eric Chrobak 2015-2025</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
