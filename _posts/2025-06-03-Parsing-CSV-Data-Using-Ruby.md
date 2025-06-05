@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Parsing CSV Data Using Ruby
-date: 2025-06-05 08:00:00 -0500
+date: 2025-06-03 08:00:00 -0500
 author: Eric Chrobak
 ---
 <br>
