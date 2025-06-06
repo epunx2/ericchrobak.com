@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146581885-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-146581885-1');
+    </script>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>BestBite</title>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="container">
+      	<div class="row">
+      		<div class="col-md-6">
+      			<h1>BestBite</h1>
+      		</div>
+      			<ul class="nav nav-pills">
+    					<li role="presentation" class="active"><a href="#">About</a></li>
+    					<li role="presentation"><a href="#">Sign Up</a></li>
+    					<li role="presentation"><a href="#">Log In</a></li>
+  				  </ul>
+      		</div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+      	<div class="row">
+  			<div class="col-md-4">
+  				<h1>Browse.</h1>
+  				<h1>Create.</h1>
+  				<h1>Share.</h1>
+  			</div>
+  		</div>
+      </div>
+    </div>
+
+    <div class="section banner">
+      <div class="container">
+        <h3 id="one">Always have the answer to "What's for dinner?"</h3>
+		<a class="btn" href="#">Learn More</a>
+
+      </div>
+    </div>
+
+    <div class="supporting">
+      <div class="container">
+      	<div class="page-header">
+      	  <h2>Newest Contributions</h2>
+      	</div>
+		<div class="row">
+  			<div class="col-md-4">
+  				<h4>Breakfast</h4>
+  				<p>Maple French Toast <br/> Rolled Oats With Berries</p>
+  			</div>
+  			<div class="col-md-4">
+  				<h4>Dinner</h4>
+  				<p>Black Bean Stuffed Peppers <br/> Pesto Pasta with Spinach</p>
+  			</div>
+  			<div class="col-md-4">
+  				<h4>Dessert</h4>
+  				<p>German Chocolate Cake <br/> Hazelnut Tiramisu</p>
+  			</div>
+		</div>
+      </div>
+    </div>
+	<div class="footer">
+      <div class="container">
+      	<div class="row">
+  			<div class="col-md-4">
+  				<p class="one">&copy 2014-<script>document.write(new Date().getFullYear())</script> BestBite</p>
+  			</div>
+  			<div class="col-md-4">
+  				<a class="two" href="#">BestBite.com</a>
+  			</div>
+  			<div class="col-md-4">
+  				<p class="three">12 Greentree Lane, Orlando, FL</p>
+  			</div>
+		</div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+<!--
+1. In the header section, add a row with two columns. In the first column, write the heading "BestBite."
+In the second column, make a navigation bar using Boostrap's pills. Add three links that say "About", "Sign Up", and "Log In."
+Set the class of the "About" item to be active.
+
+2.In the jumbotron section, add headings that say Browse. Create. Share.. Use margins and Bootstrap's offset columns to achieve the alignment shown in the design.
+Add a background image to the jumbotron. The one we used is here.
+
+3.In the banner section, add a link that says Learn More.
+Style the link into a large default Bootstrap button. Write CSS to color it rgba(216,25,47,.5) and to adjust the top margin.
+
+4. In the supporting section, underneath thepage-header div, add a row with three equal-sized columns.
+In each column, add a subheading, and then add a list containing recipe names. Feel free to use your own text.
+
+5. In the footer section, add text for each column, style the text as shown in the design, and color the background#eeeeee.
+--!>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+i<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146581885-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-146581885-1');
+	</script>
+	<title>How to Extend Your App | Eric Chrobak</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Eric Chrobak">
+	<meta name="google-site-verification" content="mlSH_0PUjKe4Vjt1l5LJBdkVBq2rtdxkN0A2gV92NU4" />
+	<meta name="description" content="Eric Chrobak is a software engineer. Skills include Ruby, Rails, HTML, CSS, and JavaScript.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<!--CSS-->
+	<link rel="shortcut icon" type="image/icon" href="/jpg/webfavicon.png">
+	<link rel="icon" type="image/icon" href="/jpg/webfavicon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/scrolling-nav.css">
+	<!-- custom style -->
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism.min.css" rel="stylesheet" />
+	<style type="text/css"></style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="/javascript/jquery.easing.min.js"></script>
+	<script src="/javascript/scroll-down.js"></script>
+	<script src="/javascript/script.js"></script>
+	<script src="/javascript/scrolling-nav.js"></script>
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top smart-scroll" role="navigation">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" id="name" href="#page-top">EC</a>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll active" href="http://localhost:4000/">Home</a>
+                </li>
+                
+                <li>
+                    <a class="page-scroll" href="http://localhost:4000/about.html">About</a>
+                </li>
+                
+                <li>
+                    <a class="page-scroll" href="http://localhost:4000/blog.html">Blog</a>
+                </li>
+                
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+	<div class="post">
+    <div class="container-fluid">
+        <h1>How to Extend Your App</h1>
+        <p id="date">29 Aug 2023 - Eric Chrobak</p>
+        <p><br />
+I worked in construction previously and we built several home additions. These additions had to integrate with the existing systems of the home like the HVAC, plumbing, and electricity. If you are building up on the house then you have to consider load bearing walls, ventilation, roofing, adding staircases, etc. People are aware of this and don’t just start tearing off the side of their house.<br /><br />
+They find a contractor, get blueprints, get permits, order material, and then the work starts. From there they dig the hole, pour the foundation, let it sit, frame the walls, put the roof rafters on, add plywood to the wall and roof, etc. Eventually, you put wiring in the walls, plumbing, close up the walls, add lighting, paint, add flooring, do the finishing touches and the work is complete.
+<br /><br /></p>
+
+<h2 id="how-do-you-extend-your-app-with-classes"><strong>How do you extend your App? With Classes</strong></h2>
+<p><br />
+Just like there are various things that you need to consider when you do an addition on a house, you have to do the same when you extend the functionality of an existing application. For instance if your app is a single file with several hundred plus lines of code, you don’t want to add another 100 lines of code to extend the application. It becomes unwieldy the larger the file is. The  same applies if you have an MVC application. A great way to extend your application is to create and/or add a library to the application. 
+<br /><br /></p>
+
+<h2 id="extending-the-php-application"><strong>Extending the PHP Application</strong></h2>
+<p><br />
+In the previous blog post we talked about a use case where a Ruby application needed to be ported to PHP. The biggest issue with the initial port was, it did not allow you to easily extend the functionality of the PHP app. The new script worked as expected but,it would have had to be copied and pasted into the main run file. The way the new script was written would have required significant changes to the existing PHP app. The new app was left at a point where it was prototyped out and working.</p>
+
+<p>It needed to be made into a class which could be called in the existing PHP app. For this library it only needed a class with 3 functions. 
+<br /><br /></p>
+
+<h2 id="the-constructor-function"><strong>The Constructor Function</strong></h2>
+<p><br /></p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">private</span> <span class="nv">$curl</span><span class="p">,</span> <span class="nv">$header</span><span class="p">,</span> <span class="nv">$token_url</span>
+<span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">(){</span>
+  <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">curl</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">();</span>
+  <span class="nv">$token_url</span> <span class="o">=</span> <span class="s2">"zohoapiurl"</span><span class="p">;</span>
+  <span class="nv">$token_response</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">post_call</span><span class="p">(</span><span class="nv">$token_url</span><span class="p">);</span>
+  <span class="c1">// Add the token to the header</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ol>
+  <li>In the initialization initiate the curl instance.</li>
+  <li>Make a POST to authenticate with Zoho using OAuth2.</li>
+  <li>Save the access token to an instance variable that is used for each call to Zoho.
+<br /><br /></li>
+</ol>
+
+<h2 id="upsert-to-zoho"><strong>Upsert to Zoho</strong></h2>
+<p><br /></p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="n">upsert</span><span class="p">(</span><span class="nv">$payload</span><span class="p">){</span>
+  <span class="nv">$upsert_object</span> <span class="o">-</span> <span class="k">array</span><span class="p">(</span><span class="s2">"data"</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s2">"payload"</span><span class="p">]);</span>
+  <span class="nv">$upsert_url</span> <span class="o">=</span> <span class="s2">"zohobaseurl/upsert"</span><span class="p">;</span>
+  <span class="nv">$upsert_response</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">post_call</span><span class="p">(</span><span class="nv">$token_url</span><span class="p">,</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="n">headers</span><span class="p">,</span><span class="nb">json_encode</span><span class="p">(</span><span class="nv">$upsert_object</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<ol>
+  <li>Receive the parameters</li>
+  <li>Add them to an array</li>
+  <li>Add the array to a key-value called ‘data’ that Zoho requires for an upsert</li>
+  <li>Add that key-value to another array.</li>
+  <li>Make a POST call to Zoho to upsert the record.
+<br /><br /></li>
+</ol>
+
+<h2 id="function-to-make-post-calls-with-curl"><strong>Function to make POST calls with curl</strong></h2>
+<p><br /></p>
+
+<p>This is used to make all POST calls using the curl instance initialized in the construct method.</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">public</span> <span class="k">function</span> <span class="n">post_call</span><span class="p">(</span><span class="nv">$url</span><span class="p">,</span> <span class="nv">$header</span> <span class="o">=</span> <span class="k">array</span><span class="p">(),</span> <span class="nv">$post_fields</span> <span class="o">=</span> <span class="k">array</span><span class="p">())</span> <span class="p">{</span>
+    <span class="c1">// code for curl</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<h2 id="final-thoughts"><strong>Final Thoughts</strong></h2>
+<p><br /></p>
+
+<p>I decided to move the authentication into the initialization/construct function as it made more sense as the authentication is the first thing needing to be done before communcating with the API.
+This is a large improvement upon the previous script as you only need to require the library, initialize an instance of the class, then pass that payload. Building the class is much more plug and play for the developer managing the PHP application. 
+<br /><br /></p>
+
+<h2 id="whats-next"><strong>What’s Next</strong></h2>
+<p><br /></p>
+
+<p>Add error handling and debugging.
+<br /><br /></p>
+
+<h2 id="our-next-topic"><strong>Our Next Topic</strong></h2>
+<p><br /></p>
+
+<p>I took an extended break from blogging after my wife and I had a child after the New Year. So, there are some unfinished projects we will return too:
+<br /></p>
+
+<p>The vanilla Ruby application will receive a JSON package and iterate over it.</p>
+
+    </div>
+</div>
+
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <a href="mailto:eric.chrobak@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/epunx2">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:312-513-8086">
+                        <i class="fa fa-phone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/echrobak">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright text-muted">&copy; Eric Chrobak 2015-2025</p>
+        </div>
+    </div>
+</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script> 
+	<script src="https:///prismjs@v1.30.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+
+</html>

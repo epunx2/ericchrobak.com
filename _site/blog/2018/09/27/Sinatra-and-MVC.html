@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+i<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146581885-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-146581885-1');
+	</script>
+	<title>Sinatra and MVC | Eric Chrobak</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Eric Chrobak">
+	<meta name="google-site-verification" content="mlSH_0PUjKe4Vjt1l5LJBdkVBq2rtdxkN0A2gV92NU4" />
+	<meta name="description" content="Eric Chrobak is a software engineer. Skills include Ruby, Rails, HTML, CSS, and JavaScript.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<!--CSS-->
+	<link rel="shortcut icon" type="image/icon" href="/jpg/webfavicon.png">
+	<link rel="icon" type="image/icon" href="/jpg/webfavicon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/scrolling-nav.css">
+	<!-- custom style -->
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism.min.css" rel="stylesheet" />
+	<style type="text/css"></style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="/javascript/jquery.easing.min.js"></script>
+	<script src="/javascript/scroll-down.js"></script>
+	<script src="/javascript/script.js"></script>
+	<script src="/javascript/scrolling-nav.js"></script>
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top smart-scroll" role="navigation">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" id="name" href="#page-top">EC</a>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll active" href="http://localhost:4000/">Home</a>
+                </li>
+                
+                <li>
+                    <a class="page-scroll" href="http://localhost:4000/about.html">About</a>
+                </li>
+                
+                <li>
+                    <a class="page-scroll" href="http://localhost:4000/blog.html">Blog</a>
+                </li>
+                
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+	<div class="post">
+    <div class="container-fluid">
+        <h1>Sinatra and MVC</h1>
+        <p id="date">27 Sep 2018 - Eric Chrobak</p>
+        <p><br />
+Developing an app involves a level of complexity that would make using a single file for all the code completely useless. This is due the difficulty of debugging a large file and make changes when necessary. In addition such a file would be difficult to read.
+<br />
+This is were frameworks come in such as <a href="https://sinatrarb.com/">Sinatra</a>. They allow for code that readable, easy to debug, and is separated by function.
+<br />
+Sinatra is a Ruby gem used to build lightweight web applications using Ruby and <a href="https://github.com/rack/rack">Rack</a>.
+<br /></p>
+
+<h1 id="mvc"><strong>MVC</strong></h1>
+<p>A Sinatra app can be built using the Methods-Views-Controllers method. This method has a separation of concern for each function of the application. The files are sectioned off according to purpose and function.
+<br /></p>
+
+<h1 id="models"><strong>Models</strong></h1>
+<p>Models are what is used in the background. The logic or brains of the application. This is where the classes are created and the objects. This is also where data may be persisted or saved.
+<br /></p>
+
+<h1 id="views"><strong>Views</strong></h1>
+<p>The views are what is seen by the user. The HTML, CSS, and JavaScript viewed on the webpage.
+<br /></p>
+
+<h1 id="controllers"><strong>Controllers</strong></h1>
+<p>The controller is what controls the whole application. It talks to the model and then tells the view what to show. It then will receive input from the view and relay that to the model.
+<br /></p>
+
+<p>It does this by using routes. The route is the http request or address input into the address bar.
+<br /></p>
+
+<p>The Flatiron School uses a restaurant as an metaphor to illustrate how an MVC works. Cooks are the Models - they receive input from the waiter and output food. Plates are the view - the food is presented on the plate Waiters are Controllers - they receive input from the user(customer), give that to the cook, and bring food to the customer
+<br /></p>
+
+<h1 id="folder-structure"><strong>Folder Structure</strong></h1>
+<p>Code in a MVC Sinatra application is organized by a concept call separate of concerns and single responsibility. This means that each folder and file will have a specific responsibility and be separated by responsibility.
+<br /></p>
+
+<p>Flatiron School provides an in-depth description of the structure here.</p>
+
+<p>A brief summary of that layout and structure:</p>
+<ul>
+  <li>Gemfile - Where your gems are held. These will be installed by bundler as well as look for dependencies. app.rb or app</li>
+  <li>Directory - this folder holds mvc files</li>
+  <li>Models Directory - This is where the logic files will be. The files may represent single functions or larger group of similar functions. Inside of each file you will often find individual classes.</li>
+  <li>Controller Directory - This is where the application configuration, routes, and controller actions will be located. These files controller the communication between the Models and views.</li>
+  <li>Views Directory - This is where the files will be for the views. What is displayed to the user is in this directory.</li>
+  <li>config.ru - This file is necessary for building Rack applications and using Rackup/Shotgun to start a server. This file will also load our environment, libraries and application.</li>
+  <li>Config Directory - This is where our environment file will be located. The environment file connects the application files to the proper Ruby gems and to each other.</li>
+  <li>Public Directory - Where the front files will be located. Files such images, videos, CSS, etc.</li>
+  <li>Spec Directory - This is where the test files will be located.</li>
+</ul>
+
+<p>Initially Sinatra seemed foreign but reading the file structure, mvc mater, and putting together some simple apps it was less intimidating. I hope this article provides the resources to make a little less intimidating for you as well!</p>
+
+    </div>
+</div>
+
+
+    <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <a href="mailto:eric.chrobak@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/epunx2">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:312-513-8086">
+                        <i class="fa fa-phone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/echrobak">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright text-muted">&copy; Eric Chrobak 2015-2025</p>
+        </div>
+    </div>
+</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script> 
+	<script src="https:///prismjs@v1.30.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+
+</html>
