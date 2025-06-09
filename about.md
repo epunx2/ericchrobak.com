@@ -19,45 +19,45 @@ title: About
 </div>
 
 <!-- Skills -->
-<div class="main">
+<div class="main clearfix">
     <div class="container-fluid">
         <div class="row">
             <p id="eric">Eric is a software engineer specializing in:</p>
             <div class="col-xs-6">
                 <ul>
                     <li>
-                        <p>HTML</p>
-                    </li>
-                    <li>
-                        <p>JavaScript</p>
-                    </li>
-                    <li>
                         <p>Ruby</p>
+                    </li>
+                    <li>
+                        <p>Ruby on Rails</p>
+                    </li>
+                    <li>
+                        <p>Jekyll</p>
                     </li>
                     <li>
                         <p>Sinatra</p>
                     </li>
                     <li>
-                        <p>Jekyll</p>
+                        <p>Tailwind</p>
                     </li>
                 </ul>
             </div>
             <div class="col-xs-6">
                 <ul>
                     <li>
+                        <p>HTML</p>
+                    </li>
+                    <li>
                         <p>CSS</p>
                     </li>
                     <li>
-                        <p>jQuery</p>
+                        <p>JavaScript</p>
                     </li>
                     <li>
-                        <p>Bootstrap</p>
+                        <p>PostgreSQL</p>
                     </li>
                     <li>
-                        <p>SQLite</p>
-                    </li>
-                    <li>
-                        <p>Python</p>
+                        <p>SQLite3</p>
                     </li>
                 </ul>
             </div>
