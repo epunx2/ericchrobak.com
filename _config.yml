@@ -1,96 +1,108 @@
 # Site settings
-title               : Eric Chrobak
-header-img          : jpg/home-bg.png
-email               : eric.chrobak@gmail.com
-copyright_name      : Eric Chrobak
+title: Eric Chrobak
+header-img: jpg/home-bg.png
+email: eric.chrobak@gmail.com
+copyright_name: Eric Chrobak
 description: > # this means to ignore newlines until "baseurl:"
   Eric Chrobak | Software Engineer
-baseurl             : "" # the subpath of your site, e.g. /blog
-url                 : ""
-twitter_username    :
-github_username     : epunx2
-learn_profile       : epunx2
-email_username      : eric.chrobak@gmail.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: ""
+twitter_username:
+github_username: epunx2
+learn_profile: epunx2
+email_username: eric.chrobak@gmail.com
 
 # Where things are
-source              : .
-destination         : ./_site
-plugins_dir         : _plugins
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
+source: .
+destination: ./_site
+plugins_dir: _plugins
+layouts_dir: _layouts
+data_dir: _data
+includes_dir: _includes
 sass:
-  sass_dir          : _sass
+  sass_dir: _sass
 
 # Handling Reading
-safe                : true
-include             : [".htaccess"]
-exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-keep_files          : [".git", ".svn"]
-encoding            : "utf-8"
-markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
-strict_front_matter : false
+safe: true
+include: [".htaccess"]
+exclude:
+  [
+    "Gemfile",
+    "Gemfile.lock",
+    "node_modules",
+    "vendor/bundle/",
+    "vendor/cache/",
+    "vendor/gems/",
+    "vendor/ruby/",
+  ]
+keep_files: [".git", ".svn"]
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter: false
 
 # Filtering Content
-show_drafts         : null
-limit_posts         : 0
-future              : false
-unpublished         : false
+show_drafts: null
+limit_posts: 0
+future: false
+unpublished: false
 
 # Plugins
-whitelist           : []
-plugins             :
-    - "jekyll-github-metadata"
-    - "jekyll-sitemap"
+whitelist: []
+plugins:
+  - "jekyll-github-metadata"
+  - "jekyll-sitemap"
 
 # Conversion
-markdown            : kramdown
-highlighter         : rouge
-lsi                 : false
-excerpt_separator   : "\n\n"
-incremental         : false
+markdown: kramdown
+syntax_highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 # Serving
-detach              : false
-port                : 4000
-host                : 127.0.0.1
-hostname            : "github.com"
-pages_hostname      : "github.io"
-repository_url      : "https://github.com/epunx2/ericchrobak.com"
-repository_nwo      : "epunx2/ericchrobak.com"
-repository_name     : "ericchrobak.com"
-show_dir_listing    : false
+detach: false
+port: 4000
+host: 127.0.0.1
+hostname: "github.com"
+pages_hostname: "github.io"
+repository_url: "https://github.com/epunx2/ericchrobak.com"
+repository_nwo: "epunx2/ericchrobak.com"
+repository_name: "ericchrobak.com"
+show_dir_listing: false
 gist:
-  noscript          : false
+  noscript: false
 
 # Outputting
-permalink           : /blog/:year/:month/:day/:title:output_ext
-timezone            : America/Chicago
+permalink: /blog/:year/:month/:day/:title:output_ext
+timezone: America/Chicago
 
-quiet               : false
-verbose             : false
-defaults            : []
+quiet: false
+verbose: false
+defaults: []
 
 # liquid:
-error_mode          : warn
-strict_filters      : false
-strict_variables    : false
+error_mode: warn
+strict_filters: false
+strict_variables: false
 
 # Markdown Processors
 rdiscount:
-  extensions        : []
+  extensions: []
 
 redcarpet:
-  extensions        : []
+  extensions: []
 
 kramdown:
-  auto_ids          : true
-  entity_output     : as_char
-  toc_levels        : [1, 2, 3, 4, 5, 6]
-  smart_quotes      : lsquo,rsquo,ldquo,rdquo
-  input             : GFM
-  hard_wrap         : false
-  footnote_nr       : 1
-  show_warnings     : false
-  math_engine       : mathjax
+  auto_ids: true
+  entity_output: as_char
+  toc_levels: [1, 2, 3, 4, 5, 6]
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  input: GFM
+  hard_wrap: false
+  footnote_nr: 1
+  show_warnings: false
+  math_engine: mathjax
   syntax_highlighter: rouge
+
+profile:
+  cache: false

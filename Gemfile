@@ -8,11 +8,12 @@ gem "jekyll"
 gem "bundler-stats", :git => "https://github.com/jmmastey/bundler-stats.git", :branch => "master"
 gem "thor"
 gem "github-pages"
-gem "kramdown", ">= 2.3.1"
+gem "kramdown"
 group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-github-metadata"
 end
-gem "github-linguist"
 
-gem "webrick", "~> 1.8"
+gem "github-linguist"
+gem 'rouge'
+gem "webrick"

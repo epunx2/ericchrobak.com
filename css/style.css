@@ -1,14 +1,5 @@
-/* Make this the responsive style sheet */
-/*
-Blue: #0359c6
-Gray: #595F72
-White: #FDFFFC
-Black: #0A0903
-Red: #FB3640
-Yellow: #FFB238
-Green: #86BA90
-Pink: #E5C2C0
-*/
+@import '../tailwindcss';
+/* @import 'native.css'; */
 
 html,
 body {
@@ -33,6 +24,7 @@ body {
 div {
   max-width: 100%;
 }
+
 
 /* div, .jumbotron, .container {
 	overflow: hidden;
